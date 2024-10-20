@@ -51,7 +51,7 @@ class CreateMaterialsTable extends Migration
                 ->on('languages')
                 ->references('id');
         });
-        DB::statement("ALTER TABLE materials COMMENT '教材マスタ'");
+        // DB::statement("ALTER TABLE materials COMMENT '教材マスタ'");
     }
 
     /**

@@ -38,7 +38,9 @@ class CreateLanguagesTable extends Migration
                 ->comment('削除日時');
         });
         // テーブルにコメントを付加
-        DB::statement("ALTER TABLE languages COMMENT 'プログラミング言語マスタ'");
+        // DB::statement("ALTER TABLE languages COMMENT 'プログラミング言語マスタ'");mysql
+        DB::statement("COMMENT ON TABLE languages IS 'プログラミング言語マスタ'");//pgsql
+
     }
 
     /**

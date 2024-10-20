@@ -81,7 +81,7 @@ class CreateArtifactsTable extends Migration
                 ->on('learning_days')
                 ->references('id');
         });
-        DB::statement("ALTER TABLE artifacts COMMENT '成果物マスタ'");
+        // DB::statement("ALTER TABLE artifacts COMMENT '成果物マスタ'");
     }
 
     /**

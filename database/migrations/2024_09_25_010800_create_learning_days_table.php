@@ -61,7 +61,7 @@ class CreateLearningDaysTable extends Migration
                 ->on('materials')
                 ->references('id');
         });
-        DB::statement("ALTER TABLE learning_days COMMENT '学習日数マスタ'");
+        // DB::statement("ALTER TABLE learning_days COMMENT '学習日数マスタ'");
     }
 
     /**
