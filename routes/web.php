@@ -18,7 +18,7 @@ use App\Http\Controllers\ArtifactController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('portfolio');
 });
 
 // グループ会社に関するルート設定
