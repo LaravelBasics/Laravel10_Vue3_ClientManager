@@ -1,6 +1,6 @@
 <nav class="nav flex-column">
     <a class="nav-link" href="#">トップページ</a>
-    <a class="nav-link" href="#">登録状況確認</a>
+    <a class="nav-link" href="/">ポートフォリオ</a>
 
     <!-- クライアントマスタ管理 -->
     <a class="nav-link" href="#" @click="toggleSubMenu('clientMaster')">
