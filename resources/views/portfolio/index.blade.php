@@ -9,38 +9,34 @@
             margin: 0px 0px 20px 0px; padding: 15px 0px;
             background-color: rgb(240, 240, 240);
             font-size: 3em;
-            text-align: center;">ポートフォリオ
+            text-align: center;">【Laravel プロジェクト一覧】
     </h1>
     <div>
-        <h1>【プロジェクト一覧】</h1>
         <div>
-            <h3>①メルカリ風フリマアプリ</h3>
-            <p>開発環境: Windows, Laravel 6, JavaScript, MySQL（教材の環境MacOS, Laravel 7, Docker, JavaScript, PostgreSQL）
-                <br>
-                <a href="https://laravel6-flea-market.vercel.app/" target="_blank">①アプリリンク</a>
+            <h3><a href="https://laravel6-flea-market.vercel.app/" target="_blank">①メルカリ風フリマアプリ</a>
                 <span style="margin-right: 50px;"></span>
-                <a href="https://github.com/LaravelBasics/Laravel6_FleaMarket/tree/main" target="_blank">①GitHubリポジトリ</a>
-            </p>
-            <strong>「振り返り」</strong>
-            <p>教材の環境と異なるためのエラー対応や、Laravel 6でLaravel 7の機能再現に挑戦しました。
+                <a href="https://github.com/LaravelBasics/Laravel6_FleaMarket/tree/main" target="_blank">①GitHub</a>
+            </h3>
+            <p>開発環境: Windows, Laravel 6, JavaScript, MySQL（教材の環境: MacOS, Laravel 7, Docker, JavaScript, PostgreSQL）</p>
+            <p><strong>「振り返り」</strong>
+                教材の環境と異なるためエラー対応や、Laravel 6でLaravel 7の機能再現に挑戦しました。
                 <br>
                 クレジットカード決済（PAY.JP）、Mailtrap.ioによるメール送受信、画像の保存処理にJavaScriptを利用するなど、基礎を学びつつエラー解決に取り組みました。
             </p>
 
-            <strong>「デプロイ」</strong>
-            <p>Linux上でLaravel6を使ったデプロイに挑戦し、画像処理以外の機能は成功。GDライブラリの有無により課題が残りました。</p>
+            <p><strong>「デプロイ」</strong>
+                Linux上でLaravel 6を使ったデプロイに挑戦し、画像処理以外の機能は成功。GDライブラリの有無により課題が残りました。</p>
             <br>
         </div>
         <div>
-            <h3>②SNS風アプリ</h3>
-            <p>開発環境: Windows, Laravel 6, Vue.js 3, MySQL（教材の環境MacOS, Laravel 6, Docker, Vue.js 2, PostgreSQL）
-                <br>
-                <a href="https://laravel6-sns.vercel.app/" target="_blank">②アプリリンク</a>
+            <h3>
+                <a href="https://laravel6-sns.vercel.app/" target="_blank">②SNS風アプリ</a>
                 <span style="margin-right: 50px;"></span>
-                <a href="https://github.com/LaravelBasics/Laravel6_SNS" target="_blank">②GitHubリポジトリ</a>
-            </p>
-            <strong>「振り返り」</strong>
-            <p>①と同じ環境の違い、初めてのVue.jsとLaravelの環境構築に難航しました。
+                <a href="https://github.com/LaravelBasics/Laravel6_SNS" target="_blank">②GitHub</a>
+            </h3>
+            <p>開発環境: Windows, Laravel 6, Vue.js 3, MySQL（教材の環境: MacOS, Laravel 6, Docker, Vue.js 2, PostgreSQL）</p>
+            <p><strong>「振り返り」</strong>
+                ①と同じ環境の違い、初めてのVue.jsとLaravelの環境構築に難航しました。
                 <br>
                 npmパッケージの依存関係エラーを解決する際、Vue.jsのバージョンが3に上がってしまい、Vue.jsは2と3で記述が異なるため、更に苦戦しました。
                 <br>
@@ -48,67 +44,65 @@
                 <br>
                 Googleのアカウントでログインできる機能も難しかったですが、無事に最後まで完成しました。
             </p>
-            <strong>「デプロイ」</strong>
-            <p>Linux上でLaravel6を使ったデプロイに挑戦。ローカルでは「Laravel Mix」のmix.jsを使用して動作していた部分が、デプロイ後は動作せず、課題が残りました。</p>
+            <p><strong>「デプロイ」</strong>
+                Linux上でLaravel 6を使ったデプロイに挑戦。ローカルでは「Laravel Mix」のmix.jsを使用して動作していた部分が、デプロイ後は動作せず、課題が残りました。</p>
             <br>
         </div>
         <div>
-            <h3>③ポートフォリオ</h3>
-            <p>開発環境: Laravel 10, CDN Vuejs3.3, Bootstrap5.3
-                <br>
-                <a href="https://laravel10-vue3-client-manager.vercel.app/languages" target="_blank">③アプリリンク</a>
+            <h3>
+                <a href="https://laravel10-vue3-client-manager.vercel.app/languages" target="_blank">③ポートフォリオ</a>
                 <span style="margin-right: 50px;"></span>
-                <a href="https://github.com/LaravelBasics/Laravel10_Vue3_ClientManager" target="_blank">③GitHubリポジトリ</a>
-                <div style="color: red; font-weight: bold;">※空のまま検索ボタンを押すと、データベースから全件取得されます。</div>
-                <div style="color: red; font-weight: bold;">※左上のサイドメニュー: プログラミング→学習したプログラミング→をクリックして行くと、４つの画面にアクセスできます。</div>
+                <a href="https://github.com/LaravelBasics/Laravel10_Vue3_ClientManager" target="_blank">③GitHub</a>
+            </h3>
+            <p>開発環境: Laravel 10, CDN Vuejs 3.3, Bootstrap 5.3</p>
+            <div style="color: red; font-weight: bold;">※左上のサイドメニュー: プログラミング→学習したプログラミング→をクリックして行くと、４つの画面にアクセスできます。</div>
+            <div style="color: red; font-weight: bold;">※空のまま検索ボタンを押すと、データベースから全件取得されます。</div>
             </p>
-            <strong>「振り返り」</strong>
-            <p>社外秘の情報も含まれているため職員に確認を取り、実習で作成したコードを置き換える挑戦をしました。
+            <p><strong>「振り返り」</strong>
+                社外秘の情報が含まれているため、職員に確認を取り、実習で作成したコードを置き換えることに挑戦しました。
                 <br>
                 マイグレーションのテーブル名、ユニークカラムをすべて変更し、それに伴うモデル、コントローラー、リクエストクラス、ブレードなどを修正しました。
-                <br>
                 動作するか不安でしたが、無事に完成しました。
             </p>
-            <strong>「デプロイ」</strong>
-            <p>CDNを使用していたため、Vue.jsやBootstrapの動作も問題なく、スムーズにデプロイできました。</p>
+            <p><strong>「デプロイ」</strong>
+                CDNを使用していたため、Vue.jsやBootstrapの動作も問題なく、スムーズにデプロイできました。</p>
             <br>
         </div>
         <div>
-            <h3>④簡易お問い合わせフォーム</h3>
-            <p>開発環境: ローカル、バーチャルボックス, LAMP(RockyLinux9.4, apache 2.4, MySQL 8.0, PHP8.2), Laravel11
-                <br>
-                <a href="https://laravel11-contact-form.vercel.app/" target="_blank">④アプリリンク</a>
+            <h3>
+                <a href="https://laravel11-contact-form.vercel.app/" target="_blank">④簡易お問い合わせフォーム</a>
                 <span style="margin-right: 50px;"></span>
-                <a href="https://github.com/LaravelBasics/Laravel11_ContactForm/tree/master" target="_blank">④GitHubリポジトリ</a>
-            </p>
-            <strong>「振り返り」</strong>
-            <p>3~4時間で作成した為、最低限の機能のみ実装。テスト用にメールトラップで受信を確認。
+                <a href="https://github.com/LaravelBasics/Laravel11_ContactForm/tree/master" target="_blank">④GitHub</a>
+            </h3>
+            <p>開発環境: ローカル、バーチャルボックス, LAMP(RockyLinux9.4, apache 2.4, MySQL 8.0, PHP8.2), Laravel 11</p>
+            <p><strong>「振り返り」</strong>
+                3~4時間で作成した為、最低限の機能のみ実装。テスト用にメールトラップで受信を確認しました。
                 <br>
                 Laravel 11は初めて触ったので、メール、管理者、送信者など難しかったです。
             </p>
 
-            <strong>「デプロイ」</strong>
-            <p>デプロイ後も動作するのか気になったため挑戦し、無事にメールトラップで受信できました。</p>
+            <p><strong>「デプロイ」</strong>
+                デプロイ後も動作するのか気になったため挑戦し、無事にメールトラップで受信できました。</p>
             <br>
         </div>
         <div>
-            <h3>⑤Laravelでデプロイに挑戦</h3>
-            <p>開発環境: ローカル、Laravel10, 認証パッケージBreeze, PostgreSQL
-                <br>
-                <a href="https://laravel10-breeze-demo.vercel.app/" target="_blank">⑤アプリリンク</a>
+            <h3>
+                <a href="https://laravel10-breeze-demo.vercel.app/" target="_blank">⑤Breezeを使ったログイン機能のデプロイに挑戦したアプリ</a>
                 <span style="margin-right: 50px;"></span>
-                <a href="https://github.com/LaravelBasics/Laravel10_Breeze_Demo/tree/aaa" target="_blank">⑤GitHubリポジトリ</a>
-            </p>
-            <strong>「振り返り」（2024年10月現在）</strong>
-            <p>就労支援の職員が作成した教材をもとに、Docker（WSL）とVercel(gihub連携)を学習しました。
+                <a href="https://github.com/LaravelBasics/Laravel10_Breeze_Demo/tree/aaa" target="_blank">⑤GitHub</a>
+            </h3>
+            <p>開発環境: ローカル、Laravel 10, 認証パッケージBreeze, PostgreSQL</p>
+            <p><strong>「振り返り」（2024年10月現在）</strong>
+                Laravelでデプロイに挑戦。
+                就労支援の職員が作成した教材をもとに、Docker（WSL）とVercel(gihub連携)を学習しました。
                 <br>
                 Vercelでの環境変数やデータベース接続（特にvercel.jsonや.envファイルの記述）には、ネット上に十分な情報がなく、試行錯誤を要しました。
                 <br>
                 最終的に、成功した設定をもとに必要な項目を逆算して整理、職員の方もデプロイ成功に至ったことが何よりの成果で、大きな達成感を感じました。
             </p>
 
-            <strong>「デプロイ」</strong>
-            <p>ローカルでのPostgreSQLインストールの必要性や接続方法の設定など、チャットGPTを活用しつつ、100回以上デプロイを試行して、ようやく成功に至りました。
+            <p><strong>「デプロイ」</strong>
+                ローカルでのPostgreSQLインストールの必要性や接続方法の設定など、チャットGPTを活用しつつ、100回以上デプロイを試行して、ようやく成功に至りました。
                 <br>
                 Dockerはコンテナで使用するDockerfileの作成に難航し、実習で経験したRockyLinuxを使って試行した結果、Linuxでは無事に成功しました。
             </p>
@@ -161,7 +155,7 @@
 
             <p><strong>外部実習:</strong> 3日間、13～17時。バーチャルボックスを使用してローカルにLAMP環境を構築し、Laravel 11をインストール。
                 <br>
-                課題2として簡易問い合わせフォームを作成（テスト用にメールトラップで受信を確認）。
+                課題2として簡易問い合わせフォームを作成（テスト用にメールトラップで受信を確認しました）。
                 <br>
                 成果: 初めてLinuxを学習し、課題は達成したものの、即戦力を求めていたため全体的に難しかったです。
             </p>
