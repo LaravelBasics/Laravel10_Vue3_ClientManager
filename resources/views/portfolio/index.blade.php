@@ -60,9 +60,10 @@
                 <span style="margin-right: 50px;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel10_Vue3_ClientManager" target="_blank">③GitHubリポジトリ</a>
                 <div style="color: red; font-weight: bold;">※空のまま検索ボタンを押すと、データベースから全件取得されます。</div>
+                <div style="color: red; font-weight: bold;">※左上のサイドメニュー: プログラミング→学習したプログラミング→をクリックして行くと、４つの画面にアクセスできます。</div>
             </p>
             <strong>「振り返り」</strong>
-            <p>社外秘の情報も含まれているため職員にも確認を取り、実習で作成したコードを置き換える挑戦をしました。
+            <p>社外秘の情報も含まれているため職員に確認を取り、実習で作成したコードを置き換える挑戦をしました。
                 <br>
                 マイグレーションのテーブル名、ユニークカラムをすべて変更し、それに伴うモデル、コントローラー、リクエストクラス、ブレードなどを修正しました。
                 <br>
