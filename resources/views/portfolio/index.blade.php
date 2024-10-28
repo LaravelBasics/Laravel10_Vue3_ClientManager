@@ -13,10 +13,15 @@
     </h1>
     <div>
         <div>
-            <h3><a href="https://laravel6-flea-market.vercel.app/" target="_blank">①メルカリ風フリマアプリ</a>
-                <span style="margin-right: 50px;"></span>
-                <a href="https://github.com/LaravelBasics/Laravel6_FleaMarket/tree/main" target="_blank">①GitHub</a>
-            </h3>
+            <div>
+                <h3><a href="https://laravel6-flea-market.vercel.app/" target="_blank">①メルカリ風フリマアプリ</a>
+                    <span style="margin-right: 50px;"></span>
+                    <a href="https://github.com/LaravelBasics/Laravel6_FleaMarket/tree/main" target="_blank">①GitHub</a>
+                </h3>
+                <span style="background-color: #B3E5FC; color: #333333; font-weight: bold;">※全アプリ共通ログイン用: メールアドレス「test@test」 パスワード「testtest」
+                    ※実在するメールアドレスを新規登録する場合は、自己責任でお願いします。
+                </span>
+            </div>
             <p>開発環境: Windows, Laravel 6, JavaScript, MySQL（教材の環境: MacOS, Laravel 7, Docker, JavaScript, PostgreSQL）</p>
             <p><strong>「振り返り」</strong>
                 教材の環境と異なるためエラー対応や、Laravel 6でLaravel 7の機能再現に挑戦しました。
@@ -26,6 +31,8 @@
 
             <p><strong>「デプロイ」</strong>
                 Windowsのプロジェクト①をLinuxにコピーして、Laravel 6を使ったデプロイに挑戦し、画像処理以外の機能は成功しました。GDライブラリの有無により課題が残りました。
+                <br>
+                出品されている物は購入出来ます。(カード決済番号は「4242, 4242, 4242, 4242」です。画像が必要になる所は保存するとserver500エラーになります)
             </p>
             <br>
         </div>
@@ -46,7 +53,10 @@
                 Googleのアカウントでログインできる機能も難しかったですが、無事に最後まで完成しました。
             </p>
             <p><strong>「デプロイ」</strong>
-                ①同様Linux上でLaravel 6を使ったデプロイに挑戦。ローカルでは「Laravel Mix」のmix.jsを使用して動作していた部分が、デプロイ後は動作せず課題が残りました。</p>
+                ①同様Linux上でLaravel 6を使ったデプロイに挑戦。ローカルでは「Laravel Mix」のmix.jsを使用して動作していた部分が、デプロイ後は動作せず課題が残りました。
+                <br>
+                Vue.jsの機能は使えませんが記事を登録、更新、削除は可能です(ローカルで登録した物は、#タグ、フォロー機能など一部表示されています)
+            </p>
             <br>
         </div>
         <div>
@@ -74,10 +84,10 @@
                 <span style="margin-right: 50px;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel10_Vue3_ClientManager" target="_blank">④GitHub</a>
             </h3>
-            <p>開発環境: Windows, Laravel 10, CDN Vuejs 3.3, Bootstrap 5.3</p>
-            <div style="color: red; font-weight: bold;">※左上のサイドメニュー: プログラミング→学習したプログラミング→をクリックして行くと、４つの画面にアクセスできます。</div>
-            <div style="color: red; font-weight: bold;">※空のまま検索ボタンを押すと、データベースから全件取得されます。</div>
+            <div style="background-color: #B3E5FC; color: #333333; font-weight: bold;">※左上のサイドメニュー: プログラミング→学習したプログラミング→をクリックして行くと、４つの画面にアクセスできます。</div>
+            <div style="background-color: #B3E5FC; color: #333333; font-weight: bold;">※空のまま検索ボタンを押すと、データベースから全件取得されます。</div>
             </p>
+            <p>開発環境: Windows, Laravel 10, CDN Vuejs 3.3, Bootstrap 5.3</p>
             <p><strong>「振り返り」</strong>
                 社外秘の情報が含まれているため職員に確認を取り、実習で作成したコードを置き換えることに挑戦しました。
                 <br>
