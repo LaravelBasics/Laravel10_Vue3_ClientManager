@@ -25,7 +25,8 @@
             </p>
 
             <p><strong>「デプロイ」</strong>
-                Linux上でLaravel 6を使ったデプロイに挑戦し、画像処理以外の機能は成功。GDライブラリの有無により課題が残りました。</p>
+                Windowsのプロジェクト①をLinuxにコピーして、Laravel 6を使ったデプロイに挑戦し、画像処理以外の機能は成功しました。GDライブラリの有無により課題が残りました。
+            </p>
             <br>
         </div>
         <div>
@@ -38,71 +39,89 @@
             <p><strong>「振り返り」</strong>
                 ①と同じ環境の違い、初めてのVue.jsとLaravelの環境構築に難航しました。
                 <br>
-                npmパッケージの依存関係エラーを解決する際、Vue.jsのバージョンが3に上がってしまい、Vue.jsは2と3で記述が異なるため、更に苦戦しました。
+                npmパッケージの依存関係エラーを解決する際、Vue.jsのバージョンが3に上がってしまい、Vue.jsは2と3で記述が異なるため更に苦戦しました。
                 <br>
                 教材通りの機能は実装できましたが、コンポーネントを使用したVueファイルはあまり理解できませんでした。
                 <br>
                 Googleのアカウントでログインできる機能も難しかったですが、無事に最後まで完成しました。
             </p>
             <p><strong>「デプロイ」</strong>
-                Linux上でLaravel 6を使ったデプロイに挑戦。ローカルでは「Laravel Mix」のmix.jsを使用して動作していた部分が、デプロイ後は動作せず、課題が残りました。</p>
+                ①同様Linux上でLaravel 6を使ったデプロイに挑戦。ローカルでは「Laravel Mix」のmix.jsを使用して動作していた部分が、デプロイ後は動作せず課題が残りました。</p>
             <br>
         </div>
         <div>
             <h3>
-                <a href="https://laravel10-vue3-client-manager.vercel.app/languages" target="_blank">③ポートフォリオ</a>
+                <a href="https://laravel10-books.vercel.app/" target="_blank">③本管理アプリ</a>
                 <span style="margin-right: 50px;"></span>
-                <a href="https://github.com/LaravelBasics/Laravel10_Vue3_ClientManager" target="_blank">③GitHub</a>
+                <a href="https://github.com/LaravelBasics/Laravel10_Books" target="_blank">③GitHub</a>
             </h3>
-            <p>開発環境: Laravel 10, CDN Vuejs 3.3, Bootstrap 5.3</p>
+            <p>開発環境: Windows, Laravel 10, React, 認証パッケージBreeze, PostgreSQL</p>
+            <p><strong>「振り返り」</strong>
+                就労支援の職員が作成した基本設計書をもとに、本管理アプリの機能変更と追加を行いました。
+                <br>
+                Laravelシーダーのファクトリークラスでダミーデータを生成した際に、ダミーデータを英語から日本語に変更するのに苦戦しました。
+                <br>
+                職員に動作確認をしてもらい機能自体は完成しましたが、Reactはあまり理解できませんでした。
+            </p>
+            <p><strong>「デプロイ」</strong>
+                Reactのjsxファイルでデプロイに挑戦しました。成功するか不安でしたが、無事に動作しました。
+            </p>
+            <br>
+        </div>
+        <div>
+            <h3>
+                <a href="https://laravel10-vue3-client-manager.vercel.app/languages" target="_blank">④ポートフォリオ</a>
+                <span style="margin-right: 50px;"></span>
+                <a href="https://github.com/LaravelBasics/Laravel10_Vue3_ClientManager" target="_blank">④GitHub</a>
+            </h3>
+            <p>開発環境: Windows, Laravel 10, CDN Vuejs 3.3, Bootstrap 5.3</p>
             <div style="color: red; font-weight: bold;">※左上のサイドメニュー: プログラミング→学習したプログラミング→をクリックして行くと、４つの画面にアクセスできます。</div>
             <div style="color: red; font-weight: bold;">※空のまま検索ボタンを押すと、データベースから全件取得されます。</div>
             </p>
             <p><strong>「振り返り」</strong>
-                社外秘の情報が含まれているため、職員に確認を取り、実習で作成したコードを置き換えることに挑戦しました。
+                社外秘の情報が含まれているため職員に確認を取り、実習で作成したコードを置き換えることに挑戦しました。
                 <br>
                 マイグレーションのテーブル名、ユニークカラムをすべて変更し、それに伴うモデル、コントローラー、リクエストクラス、ブレードなどを修正しました。
-                動作するか不安でしたが、無事に完成しました。
+                動作するか不安でしたが無事に完成しました。
             </p>
             <p><strong>「デプロイ」</strong>
-                CDNを使用していたため、Vue.jsやBootstrapの動作も問題なく、スムーズにデプロイできました。</p>
+                CDNを使用していたため、Vue.jsやBootstrapの動作も問題なくスムーズにデプロイできました。</p>
             <br>
         </div>
         <div>
             <h3>
-                <a href="https://laravel11-contact-form.vercel.app/" target="_blank">④簡易お問い合わせフォーム</a>
+                <a href="https://laravel11-contact-form.vercel.app/" target="_blank">⑤簡易お問い合わせフォーム</a>
                 <span style="margin-right: 50px;"></span>
-                <a href="https://github.com/LaravelBasics/Laravel11_ContactForm/tree/master" target="_blank">④GitHub</a>
+                <a href="https://github.com/LaravelBasics/Laravel11_ContactForm/tree/master" target="_blank">⑤GitHub</a>
             </h3>
-            <p>開発環境: ローカル、バーチャルボックス, LAMP(RockyLinux9.4, apache 2.4, MySQL 8.0, PHP8.2), Laravel 11</p>
+            <p>開発環境: バーチャルボックス, LAMP(RockyLinux9.4, apache 2.4, MySQL 8.0, PHP8.2), Laravel 11</p>
             <p><strong>「振り返り」</strong>
                 3~4時間で作成した為、最低限の機能のみ実装。テスト用にメールトラップで受信を確認しました。
                 <br>
                 Laravel 11は初めて触ったので、メール、管理者、送信者など難しかったです。
             </p>
-
             <p><strong>「デプロイ」</strong>
                 デプロイ後も動作するのか気になったため挑戦し、無事にメールトラップで受信できました。</p>
             <br>
         </div>
         <div>
             <h3>
-                <a href="https://laravel10-breeze-demo.vercel.app/" target="_blank">⑤Breezeを使ったログイン機能のデプロイに挑戦したアプリ</a>
+                <a href="https://laravel10-breeze-demo.vercel.app/" target="_blank">⑥Breezeを使ったログイン機能のデプロイに挑戦したアプリ</a>
                 <span style="margin-right: 50px;"></span>
-                <a href="https://github.com/LaravelBasics/Laravel10_Breeze_Demo/tree/aaa" target="_blank">⑤GitHub</a>
+                <a href="https://github.com/LaravelBasics/Laravel10_Breeze_Demo/tree/aaa" target="_blank">⑥GitHub</a>
             </h3>
-            <p>開発環境: ローカル、Laravel 10, 認証パッケージBreeze, PostgreSQL</p>
+            <p>開発環境: Windows, Laravel 10, 認証パッケージBreeze, PostgreSQL</p>
             <p><strong>「振り返り」（2024年10月現在）</strong>
                 Laravelでデプロイに挑戦。
                 就労支援の職員が作成した教材をもとに、Docker（WSL）とVercel(gihub連携)を学習しました。
                 <br>
-                Vercelでの環境変数やデータベース接続（特にvercel.jsonや.envファイルの記述）には、ネット上に十分な情報がなく、試行錯誤を要しました。
+                Vercelでの環境変数やデータベース接続（特にvercel.jsonや.envファイルの記述）には、ネット上に十分な情報がなく試行錯誤を要しました。
                 <br>
                 最終的に、成功した設定をもとに必要な項目を逆算して整理、職員の方もデプロイ成功に至ったことが何よりの成果で、大きな達成感を感じました。
             </p>
 
             <p><strong>「デプロイ」</strong>
-                ローカルでのPostgreSQLインストールの必要性や接続方法の設定など、チャットGPTを活用しつつ、100回以上デプロイを試行して、ようやく成功に至りました。
+                ローカルでのPostgreSQLインストールの必要性や接続方法の設定など、チャットGPTを活用しつつ、100回以上デプロイを試行してようやく成功に至りました。
                 <br>
                 Dockerはコンテナで使用するDockerfileの作成に難航し、実習で経験したRockyLinuxを使って試行した結果、Linuxでは無事に成功しました。
             </p>
@@ -193,18 +212,18 @@
             <p>7月8日〜7月24日: Techpit②SNS風アプリ制作、PC4台キッティング作業</p>
 
             <h6>2024年7月</h6>
-            <p>7月26日〜7月31日: 職員が作成した基本設計書をもとに（Laravel 10, React）本管理アプリの機能変更、追加。ProgateでReact学習</p>
+            <p>7月26日〜7月31日: 職員が作成した基本設計書をもとに（Laravel 10, React）③本管理アプリの機能変更、追加。ProgateでReact学習</p>
             <p>7月31日〜8月5日: ProgateのJavaScript、Git、HTML&CSS</p>
             <p>8月6日〜8月7日: JavaScriptによるDOM操作</p>
             <p>8月8日〜8月16日: Vue.js</p>
             <p>8月19日〜9月19日: リテラル本社実習</p>
-            <p>9月24日〜9月27日: 実習で作成したコードを置き換えられるか検証③ポートフォリオ、Excelアンケートデータ入力(10件)</p>
+            <p>9月24日〜9月27日: 実習で作成したコードを置き換えられるか検証④ポートフォリオ、Excelアンケートデータ入力(10件)</p>
             <p>9月28日〜9月30日: ProgateでjQuery</p>
             <p>10月1日〜10月7日: 外部実習のために学習（Linux環境でUbuntu、LAMP構築）</p>
-            <p>10月8日〜10月10日: 3日間外部実習、Rocky Linux 9 LAMP環境構築、④簡易お問い合わせフォーム作成</p>
+            <p>10月8日〜10月10日: 3日間外部実習、Rocky Linux 9 LAMP環境構築、⑤簡易お問い合わせフォーム作成</p>
             <p>10月11日〜10月16日: 実習の復習</p>
-            <p>10月17日〜10月5日: 就労支援の職員が作成中の教材、Dockerデプロイ学習しながらデバッグ。⑤Laravelでデプロイに挑戦。デプロイが成功したので職員へフィードバック</p>
-            <p>10月18日〜x月x日: ポートフォリオ作成中、①～⑤デプロイの検証。</p>
+            <p>10月17日〜10月5日: 就労支援の職員が作成中の教材、Dockerデプロイ学習しながらデバッグ。⑥Laravelでデプロイに挑戦。デプロイが成功したので職員へフィードバック</p>
+            <p>10月18日〜x月x日: ポートフォリオ作成中、①～⑥デプロイの検証。</p>
         </div>
         <div>
             <h3>「最後までご覧いただき、ありがとうございました。これまでの学習と経験を活かし、さらに技術を磨いていきたいと思っております。ご興味をお持ちいただけましたら、ぜひお気軽にご連絡ください。どうぞよろしくお願いいたします。」</h3>
