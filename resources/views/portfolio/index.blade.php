@@ -22,7 +22,10 @@
                     ※実在するメールアドレスを新規登録する場合は、自己責任でお願いします。
                 </span>
             </div>
-            <p>開発環境: Windows, Laravel 6, JavaScript, MySQL（教材の環境: MacOS, Laravel 7, Docker, JavaScript, PostgreSQL）</p>
+            <p>開発環境: Windows, Laravel 6, JavaScript, MySQL（教材の環境: MacOS, Laravel 7, Docker, JavaScript, PostgreSQL）
+                <br>
+                アプリ製作期間：３週間
+            </p>
             <p><strong>「振り返り」</strong>
                 教材の環境と異なるためエラー対応や、Laravel 6でLaravel 7の機能再現に挑戦しました。
                 <br>
@@ -42,7 +45,10 @@
                 <span style="margin-right: 50px;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel6_SNS" target="_blank">②GitHub</a>
             </h3>
-            <p>開発環境: Windows, Laravel 6, Vue.js 3, MySQL（教材の環境: MacOS, Laravel 6, Docker, Vue.js 2, PostgreSQL）</p>
+            <p>開発環境: Windows, Laravel 6, Vue.js 3, MySQL（教材の環境: MacOS, Laravel 6, Docker, Vue.js 2, PostgreSQL）
+                <br>
+                アプリ製作期間：３週間
+            </p>
             <p><strong>「振り返り」</strong>
                 ①と同じ環境の違い、初めてのVue.jsとLaravelの環境構築に難航しました。
                 <br>
@@ -65,7 +71,10 @@
                 <span style="margin-right: 50px;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel10_Books" target="_blank">③GitHub</a>
             </h3>
-            <p>開発環境: Windows, Laravel 10, React, 認証パッケージBreeze, PostgreSQL</p>
+            <p>開発環境: Windows, Laravel 10, React, 認証パッケージBreeze, PostgreSQL
+                <br>
+                アプリ製作期間：１週間
+            </p>
             <p><strong>「振り返り」</strong>
                 就労支援の職員が作成した基本設計書をもとに、本管理アプリの機能変更と追加を行いました。
                 <br>
@@ -87,7 +96,10 @@
             <div style="background-color: #B3E5FC; color: #333333; font-weight: bold;">※左上のサイドメニュー: プログラミング→学習したプログラミング→をクリックして行くと、４つの画面にアクセスできます。</div>
             <div style="background-color: #B3E5FC; color: #333333; font-weight: bold;">※空のまま検索ボタンを押すと、データベースから全件取得されます。</div>
             </p>
-            <p>開発環境: Windows, Laravel 10, CDN Vuejs 3.3, Bootstrap 5.3</p>
+            <p>開発環境: Windows, Laravel 10, CDN Vuejs 3.3, Bootstrap 5.3
+                <br>
+                実習中のアプリ製作期間：１か月（コードを置き換えた期間：１週間）
+            </p>
             <p><strong>「振り返り」</strong>
                 社外秘の情報が含まれているため職員に確認を取り、実習で作成したコードを置き換えることに挑戦しました。
                 <br>
@@ -104,9 +116,12 @@
                 <span style="margin-right: 50px;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel11_ContactForm/tree/master" target="_blank">⑤GitHub</a>
             </h3>
-            <p>開発環境: バーチャルボックス, LAMP(RockyLinux9.4, apache 2.4, MySQL 8.0, PHP8.2), Laravel 11</p>
+            <p>開発環境: バーチャルボックス, LAMP(RockyLinux9.4, apache 2.4, MySQL 8.0, PHP8.2), Laravel 11
+                <br>
+                アプリ製作期間：３～４時間（環境構築を除いた時間）
+            </p>
             <p><strong>「振り返り」</strong>
-                3~4時間で作成した為、最低限の機能のみ実装。テスト用にメールトラップで受信を確認しました。
+                外部実習で制作したアプリ。フロントエンドは最低限の機能で実装しました。テスト用にメールトラップで受信を確認しました。
                 <br>
                 Laravel 11は初めて触ったので、メール、管理者、送信者など難しかったです。
             </p>
@@ -121,6 +136,7 @@
                 <a href="https://github.com/LaravelBasics/Laravel10_Breeze_Demo/tree/aaa" target="_blank">⑥GitHub</a>
             </h3>
             <p>開発環境: Windows, Laravel 10, 認証パッケージBreeze, PostgreSQL</p>
+            デプロイまでの期間２日
             <p><strong>「振り返り」（2024年10月現在）</strong>
                 Laravelでデプロイに挑戦。
                 就労支援の職員が作成した教材をもとに、Docker（WSL）とVercel(gihub連携)を学習しました。
@@ -169,7 +185,7 @@
         </div>
         <div>
             <h3>④実習経験</h3>
-            <p><strong>本社実習:</strong> 8/19～9/19の1か月間、10～16時（休憩1時間）
+            <p><strong>本社実習（株式会社リテラル）:</strong> 8/19～9/19の1か月間、10～16時（休憩1時間）
                 <br>
                 過去の案件顧客管理システムの一部を基本設計書、詳細設計書を元に作成（マイグレーション、シーダー、モデルは事前に用意された物を使用）
                 <br>
@@ -184,7 +200,7 @@
 
             <p><strong>外部実習:</strong> 3日間、13～17時。バーチャルボックスを使用してローカルにLAMP環境を構築し、Laravel 11をインストール。
                 <br>
-                課題2として簡易問い合わせフォームを作成（テスト用にメールトラップで受信を確認しました）。
+                課題2として⑤簡易問い合わせフォームを作成（テスト用にメールトラップで受信を確認しました）。
                 <br>
                 成果: 初めてLinuxを学習し、課題は達成したものの、即戦力を求めていたため全体的に難しかったです。
             </p>
@@ -233,7 +249,8 @@
             <p>10月8日〜10月10日: 3日間外部実習、Rocky Linux 9 LAMP環境構築、⑤簡易お問い合わせフォーム作成</p>
             <p>10月11日〜10月16日: 実習の復習</p>
             <p>10月17日〜10月5日: 就労支援の職員が作成中の教材、Dockerデプロイ学習しながらデバッグ。⑥Laravelでデプロイに挑戦。デプロイが成功したので職員へフィードバック</p>
-            <p>10月18日〜x月x日: ポートフォリオ作成中、①～⑥デプロイの検証。</p>
+            <p>10月18日〜10月29日: ポートフォリオ完成、①～⑥デプロイの検証終了</p>
+            <p>10月29日〜xx月xx日: 就職活動開始</p>
         </div>
         <div>
             <h3>「最後までご覧いただき、ありがとうございました。これまでの学習と経験を活かし、さらに技術を磨いていきたいと思っております。ご興味をお持ちいただけましたら、ぜひお気軽にご連絡ください。どうぞよろしくお願いいたします。」</h3>
