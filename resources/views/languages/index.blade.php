@@ -49,7 +49,7 @@
         @csrf
         <div class="d-flex align-items-center">
             <div class="me-2">
-                <input type="text" v-model="newCompany.name" type="text" id="new-company-name" name="company_name"
+                <input type="text" v-model="newCompany.name" id="new-company-name" name="company_name"
                     class="form-control @error('company_name') @else @enderror" style="width: 200px;">
                 <small class="form-text text-muted">(例) Java</small>
                 <div v-if="validationErrors == false" style="max-width: 200px;">

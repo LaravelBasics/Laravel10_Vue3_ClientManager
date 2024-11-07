@@ -22,7 +22,7 @@
                     ※実在するメールアドレスを新規登録する場合は、自己責任でお願いします。
                 </span>
             </div>
-            <p>開発環境: Windows, Laravel 6, JavaScript, MySQL（教材の環境: MacOS, Laravel 7, Docker, JavaScript, PostgreSQL）
+            <p>開発環境: Windows, Laravel 6, JavaScript, MySQL（教材の環境: Windows, Laravel 7, Docker, JavaScript, MySQL）
                 <br>
                 アプリ製作期間：３週間
             </p>
@@ -50,18 +50,19 @@
                 アプリ製作期間：３週間
             </p>
             <p><strong>「振り返り」</strong>
-                ①と同じ環境の違い、初めてのVue.jsとLaravelの環境構築に難航しました。
+                初めてのVue.jsとLaravelの環境構築に苦戦し、
                 <br>
-                npmパッケージの依存関係エラーを解決する際、Vue.jsのバージョンが3に上がってしまい、Vue.jsは2と3で記述が異なるため更に苦戦しました。
+                特にnpm依存関係のエラーでVue.jsが2から3へ自動的にバージョンアップされたため記述の違いにさらに時間がかかりました。
                 <br>
-                教材通りの機能は実装できましたが、コンポーネントを使用したVueファイルはあまり理解できませんでした。
+                教材通りの機能は実装できたものの、Vueコンポーネントの理解が不十分でした。
                 <br>
-                Googleのアカウントでログインできる機能も難しかったですが、無事に最後まで完成しました。
+                また、Googleアカウントでのログイン機能の実装も困難でしたが、無事に実現しました。
             </p>
             <p><strong>「デプロイ」</strong>
-                ①同様Linux上でLaravel 6を使ったデプロイに挑戦。ローカルでは「Laravel Mix」のmix.jsを使用して動作していた部分が、デプロイ後は動作せず課題が残りました。
+                Linux上でLaravel 6を用いたデプロイに挑戦した際、Laravel Mixのmix.jsを使ったVue.js機能が本番環境で動作しないという課題に直面しました。
                 <br>
-                Vue.jsの機能は使えませんが記事を登録、更新、削除は可能です(ローカルで登録した物は、#タグ、フォロー機能など一部表示されています)
+                これに対して、npm run productionでビルドを行い、vercel.jsonの設定を見直した後、npx vercel --forceで再デプロイすることでVue.jsが本番で正常に動作するよう改善しました。
+
             </p>
             <br>
         </div>
@@ -135,8 +136,10 @@
                 <span style="margin-right: 50px;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel10_Breeze_Demo/tree/aaa" target="_blank">⑥GitHub</a>
             </h3>
-            <p>開発環境: Windows, Laravel 10, 認証パッケージBreeze, PostgreSQL</p>
-            デプロイまでの期間２日
+            <p>開発環境: Windows, Laravel 10, 認証パッケージBreeze, PostgreSQL
+                <br>
+                デプロイまでの期間２日
+            </p>
             <p><strong>「振り返り」（2024年10月現在）</strong>
                 Laravelでデプロイに挑戦。
                 就労支援の職員が作成した教材をもとに、Docker（WSL）とVercel(gihub連携)を学習しました。
@@ -251,6 +254,7 @@
             <p>10月17日〜10月5日: 就労支援の職員が作成中の教材、Dockerデプロイ学習しながらデバッグ。⑥Laravelでデプロイに挑戦。デプロイが成功したので職員へフィードバック</p>
             <p>10月18日〜10月29日: ポートフォリオ完成、①～⑥デプロイの検証終了</p>
             <p>10月29日〜xx月xx日: 就職活動開始</p>
+            <p>11月1日〜11月7日: ポートフォリオの修正、②SNS風アプリの見直し、Vue.jsが本番で正常に動作するよう改善</p>
         </div>
         <div>
             <h3>「最後までご覧いただき、ありがとうございました。これまでの学習と経験を活かし、さらに技術を磨いていきたいと思っております。ご興味をお持ちいただけましたら、ぜひお気軽にご連絡ください。どうぞよろしくお願いいたします。」</h3>
