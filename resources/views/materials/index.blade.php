@@ -13,10 +13,10 @@
         <!-- フラッシュメッセージの表示 -->
         @include('includes.flash-message')
 
-        <button type="button" class="btn btn-link p-0 float-end" @click="showHelpModal"
+        <!-- <button type="button" class="btn btn-link p-0 float-end" @click="showHelpModal"
             style="text-decoration: underline;">
             ？ヘルプ
-        </button>
+        </button> -->
     </div>
     <h4>教材検索</h4>
 
@@ -91,7 +91,7 @@
             <div class="me-2">
                 <input type="text" v-model="newBranchOffice.code" id="branch-code" name="code"
                     class="form-control @error('code') @else @enderror" style="width: 200px;">
-                <small class="form-text text-muted">(例) 200</small>
+                <small class="form-text text-muted">(例) 300</small>
                 <div v-if="validationErrors == false" style="position: absolute; width: 100%; max-width: 200px;">
                     @error('code')
                     <small style="display: block; color: #dc3545;">※ {{ $message }}</small>
@@ -241,7 +241,7 @@
     </div>
 
     <!-- モーダルを画面中央に配置し、大きさを調整 -->
-    <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" style="max-width: 15cm;">
             <div class="modal-content" style="height: 10cm;">
                 <div class="modal-header">
@@ -255,7 +255,7 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 @endsection
 

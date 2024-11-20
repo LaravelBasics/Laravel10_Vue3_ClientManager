@@ -13,10 +13,10 @@
         <!-- フラッシュメッセージの表示 -->
         @include('includes.flash-message')
 
-        <button type="button" class="btn btn-link p-0 float-end" @click="showHelpModal"
+        <!-- <button type="button" class="btn btn-link p-0 float-end" @click="showHelpModal"
             style="text-decoration: underline;">
             ？ヘルプ
-        </button>
+        </button> -->
     </div>
     <h4>成果物検索</h4>
 
@@ -187,7 +187,7 @@
             <div class="me-2" style="margin-left: 0; margin-top: 0.04cm;">
                 <input type="text" v-model="newSection.code" id="department-code" name="code" class="form-control
                 @error('code') @else @enderror" style="width: 95px; max-width: 95px;">
-                <small class="form-text text-muted" style="display: block;">(例) 501002</small>
+                <small class="form-text text-muted" style="display: block;">(例) 500</small>
                 <div v-if="validationErrors == false" style="position: absolute; width: 100%; max-width: 95px;">
                     @error('code')
                     <small style="display: block; color: #dc3545;">※ {{ $message }}</small>
@@ -199,7 +199,7 @@
             <div class="me-2" style="margin-left: 0; margin-top: 0.04cm;">
                 <input type="text" v-model="newSection.artifact_name" id="department-name" name="artifact_name" class="form-control
                 @error('artifact_name') @else @enderror" style="width: 140px; max-width: 140px;">
-                <small class="form-text text-muted" style="display: block;">(例) 成果物</small>
+                <small class="form-text text-muted" style="display: block;">(例) フリマアプリ</small>
                 <div v-if="validationErrors == false" style="position: absolute; width: 100%; max-width: 140px;">
                     @error('artifact_name')
                     <small style="display: block; color: #dc3545;">※ {{ $message }}</small>
@@ -452,7 +452,7 @@
     </div>
 
     <!-- モーダルを画面中央に配置し、大きさを調整 -->
-    <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" style="max-width: 15cm;">
             <div class="modal-content" style="height: 10cm;">
                 <div class="modal-header">
@@ -465,7 +465,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 @endsection
 

@@ -13,10 +13,10 @@
         <!-- フラッシュメッセージの表示 -->
         @include('includes.flash-message')
 
-        <button type="button" class="btn btn-link p-0 float-end" @click="showHelpModal"
+        <!-- <button type="button" class="btn btn-link p-0 float-end" @click="showHelpModal"
             style="text-decoration: underline;">
             ？ヘルプ
-        </button>
+        </button> -->
     </div>
     <h4>学習日数検索</h4>
 
@@ -135,7 +135,7 @@
             <div class="me-2" style="margin-left: 0; margin-top: 0.04cm;">
                 <input type="text" v-model="newDepartment.code" id="department-code" name="code" class="form-control
                 @error('code') @else @enderror" style="width: 180px; max-width: 180px;">
-                <small class="form-text text-muted" style="display: block;">(例) 500</small>
+                <small class="form-text text-muted" style="display: block;">(例) 400</small>
                 <div v-if="validationErrors == false" style="position: absolute; width: 100%; max-width: 180px;">
                     @error('code')
                     <small style="display: block; color: #dc3545;">※ {{ $message }}</small>
@@ -147,7 +147,7 @@
             <div class="me-2" style="margin-left: 0; margin-top: 0.04cm;">
                 <input type="text" v-model="newDepartment.days" id="department-name" name="days" class="form-control
                 @error('days') @else @enderror" style="width: 180px; max-width: 180px;">
-                <small class="form-text text-muted" style="display: block;">(例) 学習した日数</small>
+                <small class="form-text text-muted" style="display: block;">(例) 30日</small>
                 <div v-if="validationErrors == false" style="position: absolute; width: 100%; max-width: 180px;">
                     @error('days')
                     <small style="display: block; color: #dc3545;">※ {{ $message }}</small>
@@ -314,7 +314,7 @@
     </div>
 
     <!-- モーダルを画面中央に配置し、大きさを調整 -->
-    <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" style="max-width: 15cm;">
             <div class="modal-content" style="height: 10cm;">
                 <div class="modal-header">
@@ -327,7 +327,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 @endsection
 

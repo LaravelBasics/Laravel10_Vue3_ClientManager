@@ -20,6 +20,8 @@
                 </h3>
                 <span style="background-color: #B3E5FC; color: #333333; font-weight: bold;">※全アプリ共通ログイン用: メールアドレス「test@test」 パスワード「testtest」
                     ※実在するメールアドレスを新規登録する場合は、自己責任でお願いします。
+                    <br>
+                    ※デプロイで使用しているVercelの無料プランでは制限があるため、504エラー（特に画像処理）が発生する場合があります。504の場合、時間を置いて更新すると動作します。
                 </span>
             </div>
             <p>開発環境: Windows, Laravel 6, JavaScript, MySQL（教材の環境: Windows, Laravel 7, Docker, JavaScript, MySQL）
@@ -39,7 +41,7 @@
                 <br>
                 そのため、事前にローカルでpublic/imagesに画像を保存し、デプロイ後に保存された画像を使用して表示できるように仕様を変更しました。
                 <br>
-                この変更により、画像表示が正常に動作するようになりました。
+                この変更により、一時的に画像処理の機能が動作するようになりました。
             </p>
             <br>
         </div>
@@ -98,7 +100,7 @@
                 <span style="margin-right: 50px;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel10_Vue3_ClientManager" target="_blank">④GitHub</a>
             </h3>
-            <div style="background-color: #B3E5FC; color: #333333; font-weight: bold;">※左上のサイドメニュー: プログラミング→学習したプログラミング→をクリックして行くと、４つの画面にアクセスできます。</div>
+            <div style="background-color: #B3E5FC; color: #333333; font-weight: bold;">※左上のサイドメニュー: 学習したプログラミングをクリックすると、４つの画面にアクセスできます。</div>
             <div style="background-color: #B3E5FC; color: #333333; font-weight: bold;">※空のまま検索ボタンを押すと、データベースから全件取得されます。</div>
             </p>
             <p>開発環境: Windows, Laravel 10, CDN Vuejs 3.3, Bootstrap 5.3
@@ -259,7 +261,7 @@
             <p>10月18日〜10月29日: ポートフォリオ完成、①～⑥デプロイの検証終了</p>
             <p>10月29日〜xx月xx日: 就職活動開始</p>
             <p>11月1日〜11月7日: ポートフォリオの修正、②SNS風アプリの見直し、Vue.jsが本番で正常に動作するよう改善</p>
-            <p>11月8日〜11月16日: ポートフォリオの修正、①メルカリ風フリマアプリの見直し、仕様を変更し、本番で画像表示機能が正常に動作するよう改善</p>
+            <p>11月8日〜11月20日: ポートフォリオの修正、①メルカリ風フリマアプリの見直し、デプロイ後に画像処理が動作するよう仕様を変更</p>
         </div>
         <div>
             <h3>「最後までご覧いただき、ありがとうございました。これまでの学習と経験を活かし、さらに技術を磨いていきたいと思っております。ご興味をお持ちいただけましたら、ぜひお気軽にご連絡ください。どうぞよろしくお願いいたします。」</h3>

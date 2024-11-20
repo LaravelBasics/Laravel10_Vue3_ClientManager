@@ -31,7 +31,7 @@
     </div>
 
     <!-- Vue 3 CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.3.0/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.3.0/dist/vue.global.prod.js"></script>
     <!-- Axios CDN -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.4.0/dist/axios.min.js"></script>
     <!-- Bootstrap JS and dependencies -->

@@ -15,10 +15,10 @@
         @include('includes.flash-message')
 
         <!-- ?ヘルプボタン -->
-        <button type="button" class="btn btn-link p-0 float-end" @click="showHelpModal"
+        <!-- <button type="button" class="btn btn-link p-0 float-end" @click="showHelpModal"
             style="text-decoration: underline;">
             ？ヘルプ
-        </button>
+        </button> -->
     </div>
     <h4>プログラミング言語検索</h4>
 
@@ -151,7 +151,7 @@
     </div>
 
     <!-- モーダルを画面中央に配置し、大きさを調整 -->
-    <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" style="max-width: 15cm;">
             <div class="modal-content" style="height: 10cm;">
                 <div class="modal-header">
@@ -164,7 +164,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 @endsection
 
