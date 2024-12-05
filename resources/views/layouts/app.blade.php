@@ -18,6 +18,25 @@
             height: 100vh;
             /* 必要に応じて高さを設定 */
         }
+
+        .sidebar2 {
+            position: sticky;
+            /* 固定されつつ、スクロールに追従 */
+            top: 0;
+            /* ビューポートの上端に固定 */
+            height: 100vh;
+            /* 必要に応じて高さを設定 */
+        }
+
+        /* スクリーン幅が768px未満のときに、positionを解除 */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                /* スクロール追従を解除 */
+                height: auto;
+                /* 高さを自動に設定 */
+            }
+        }
     </style>
     @yield('style')
 </head>

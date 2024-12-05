@@ -8,7 +8,7 @@
             margin: 0px 0px 20px 0px; padding: 15px 0px;
             background-color: rgb(240, 240, 240);
             font-size: 2em;
-            text-align: center;">学習したプログラミング言語一覧</h1>
+            text-align: center;">プログラミング言語一覧</h1>
     <div class="mb-4">
 
         <!-- フラッシュメッセージの表示 -->
