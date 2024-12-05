@@ -9,10 +9,10 @@
         </div>
         <div class="d-flex ms-auto align-items-center">
             <span class="me-4">
-                最終更新日: 2024/11/20
+                最終更新日: 2024/12/5
             </span>
             <a href="/" class="btn btn-outline-primary" style="background-color: white; color: #0d6efd; border-color: #0d6efd; margin-top: 0.3rem;">
-                ポートフォリオ
+                トップページ
             </a>
         </div>
     </div>

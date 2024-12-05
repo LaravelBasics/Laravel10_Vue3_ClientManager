@@ -9,6 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <style>
+        .sidebar {
+            position: sticky;
+            /* 固定されつつ、スクロールに追従 */
+            top: 0;
+            /* ビューポートの上端に固定 */
+            height: 100vh;
+            /* 必要に応じて高さを設定 */
+        }
+    </style>
+    @yield('style')
 </head>
 
 <body>
@@ -19,11 +30,11 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- サイドメニュー -->
-                <div class="col-md-2 bg-light">
+                <div class="col-md-2 bg-light sidebar">
                     @include('includes.sidemenu')
                 </div>
                 <!-- コンテンツ -->
-                <div class="col-md-10 mt-4">
+                <div class="col-md-10 mt-0">
                     @yield('content')
                 </div>
             </div>
@@ -41,4 +52,5 @@
     @yield('scripts')
 
 </body>
+
 </html>

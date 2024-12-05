@@ -1,11 +1,33 @@
 @extends('layouts.app')
 
 @section('title', 'ポートフォリオ')
+@section('style')
+<style>
+    .aomori {
+        background-color: lightblue;
+    }
 
+    .kagoshima {
+        background-color: lightcoral;
+    }
+
+    .mie {
+        background-color: lightgreen;
+    }
+
+    .inline-table {
+        display: inline-block;
+        margin-right: 20px;
+        /* テーブル間の余白調整 */
+        vertical-align: top;
+        /* 上揃え */
+    }
+</style>
+@endsection
 @section('content')
 
 <div class="container mt-4">
-    <h1 style="width: 100%; height: auto;
+    <h1 id="section1" style="width: 100%; height: auto;
             margin: 0px 0px 20px 0px; padding: 15px 0px;
             background-color: rgb(240, 240, 240);
             font-size: 3em;
@@ -96,7 +118,7 @@
         </div>
         <div>
             <h3>
-                <a href="https://laravel10-vue3-client-manager.vercel.app/languages" target="_blank">④ポートフォリオ</a>
+                <a href="https://laravel10-vue3-client-manager.vercel.app/languages" target="_blank">④実習のコード置き換え</a>
                 <span style="margin-right: 50px;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel10_Vue3_ClientManager" target="_blank">④GitHub</a>
             </h3>
@@ -163,11 +185,312 @@
             <br>
         </div>
     </div>
+    <h1 id="section2"
+        style="width: 100%; height: auto;
+           margin: 0px 0px 20px 0px; padding: 15px 0px;
+           background-color: rgb(240, 240, 240);
+           font-size: 3em;
+           text-align: center;">
+        【Javaコードのみ】
+    </h1>
+
+    <!-- <h2>「アップル梅田カリキュラムの一部」</h2> -->
     <div>
-        <h1>【プロフィール】</h1>
+        {{-- <h3>「初級前半課題プログラム」<h3> --}}
+        <h4><button type="button" class="btn btn-link" @click="showHelpModal" style="font-size: 24px;">
+                ①FizzBuzz
+            </button>
+            <a href="https://github.com/LaravelBasics/java/blob/master/src/FizzBuzz7_1/FizzBuzz.java"
+                target="_blank" style="margin-left: 50px;">①コード</a>
+        </h4>
+        <h5>開発環境：eclipse<br>制作期間：1日</h5>
+        <p>「<strong>振り返り</strong>」一度完成後（コメントアウトしている箇所）、職員からフィードバックを受けて、条件式の部分をメソッド化してみました。</p>
+        {{-- <h4><button type="button" class="btn btn-link" @click="showHelpModal2" style="font-size: 24px;">
+                    ②奇数偶数
+                </button>
+                <a href="https://github.com/LaravelBasics/java/blob/master/src/FizzBuzz7_2/FizzBuzz7_2.java"
+                    target="_blank" style="margin-left: 50px;">②コード</a>
+            </h4>
+            <h5>開発環境：eclipse<br>制作期間：2日</h5>
+            <p>「<strong>振り返り</strong>」ifの中にifの処理に苦戦し、条件式は!=の方が理解しやすかったので、試行錯誤しながら制作しました。</p> --}}
+    </div>
+
+    {{-- <div>
+    <h3>「中級前半自作プログラム」<h3>
+
+            <h4><button type="button" class="btn btn-link" @click="showHelpModal3" style="font-size: 24px;">
+                    ③貯金箱
+                </button>
+                <a href="https://github.com/LaravelBasics/java/tree/master/src/%E4%B8%AD%E7%B4%9A%E5%89%8D%E5%8D%8A%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0"
+                    target="_blank" style="margin-left: 50px;">③コード</a>
+            </h4>
+            <h5>開発環境：eclipse<br>制作期間：2日</h5>
+            <p>「<strong>振り返り</strong>」処理の仕方が分からない部分は職員に質問し、試行錯誤しながら挑戦しました。</p>
+</div> --}}
+
+    <div>
+        <h4><button type="button" class="btn btn-link" @click="showHelpModal4" style="font-size: 24px;">
+                ②青森鹿児島問題（二次元配列）
+            </button>
+            <a href="https://github.com/LaravelBasics/java/blob/master/src/%E9%9D%92%E6%A3%AE%E9%B9%BF%E5%85%90%E5%B3%B6%E5%95%8F%E9%A1%8C/Main.java"
+                target="_blank" style="margin-left: 50px;">②問 【4】 コード</a>
+            <a href="https://github.com/LaravelBasics/java/blob/master/src/%E9%9D%92%E6%A3%AE%E9%B9%BF%E5%85%90%E5%B3%B6%E5%95%8F%E9%A1%8C/kennkyuu.java"
+                target="_blank" style="margin-left: 50px;">②研究問題 【1】 コード</a>
+        </h4>
+        <h5>開発環境：eclipse<br>制作期間：約2週間</h5>
+        <p>「<strong>振り返り</strong>」問題を作成した職員が退職済みのため、試行錯誤しながら挑戦しました。<br>
+            問題を【1】から順番に解いたため、コードは問【4】のみです。<br>
+            また、研究問題【1】のコードは実行時間3秒（ひとつのメソッドにまとめ、呼ぶ回数を減らすと、2秒でした）<br>
+            研究問題【2】 5 * 5に減らすなどして、コード自体は完成したものの、<br>
+            100 * 100だと、数分待っても処理が終わらないため、実行時間も含めると20 * 20までが限界でした。<br>
+            コードの書き方次第で処理速度が大きく変わるなど、色々と勉強になりました。
+        </p>
+    </div>
+
+    <div>
+        <h4><button type="button" class="btn btn-link" @click="showHelpModal5" style="font-size: 24px;">
+                ③ブラックジャック
+            </button>
+            <a href="https://github.com/LaravelBasics/java/blob/master/src/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AF/Game.java"
+                target="_blank" style="margin-left: 50px;">③コード</a>
+        </h4>
+        <h5>開発環境：eclipse<br>制作期間：3週間</h5>
+        <p>「<strong>振り返り</strong>」どのルールを適応するか（一人用にするか、対戦できるようにするか、カードを引く順番など）を決めて、<br>
+            処理の仕方が分からない部分は職員に質問し、何度もデバッグしながら挑戦しました。<br>
+            特に、エース【1】の扱い、勝敗判定の条件式に苦戦しながら、無事に完成しました。</p>
+    </div>
+
+    <!-- ①のモーダル -->
+    <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 20cm;">
+            <div class="modal-content" style="height: 10cm;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="helpModalLabel">①FizzBuzz
+                        <a href="https://github.com/LaravelBasics/java/blob/master/src/FizzBuzz7_1/FizzBuzz.java"
+                            target="_blank">コード</a>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>【問題】</h5>
+                    <p>1から100までの数字を画面に表示してください。ただし、<br>
+                        3の倍数は"FIzz"、<br>
+                        5の倍数は"Buzz"、<br>
+                        15の倍数は"FizzBuzz"と<br>
+                        表示してください。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- ②のモーダル --}}
+    {{-- <div class="modal fade" id="helpModal2" tabindex="-1" aria-labelledby="helpModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 20cm;">
+        <div class="modal-content" style="height: 10cm;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="helpModalLabel2">②奇数偶数
+                    <a href="https://github.com/LaravelBasics/java/blob/master/src/FizzBuzz7_2/FizzBuzz7_2.java"
+                        target="_blank">コード</a>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>【問題】</h5>
+                <p>1から100までの数字を画面に表示してください。ただし、<br>
+                    奇数の前には 〇 を、<br>
+                    偶然の前には □ を、<br>
+                    5の倍数は数字を表示せず、<br>
+                    記号の後ろに ☆ を表示してください。</p>
+            </div>
+        </div>
+    </div>
+</div> --}}
+    {{-- ③のモーダル --}}
+    {{-- <div class="modal fade" id="helpModal3" tabindex="-1" aria-labelledby="helpModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 20cm;">
+        <div class="modal-content" style="height: 11cm;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="helpModal3Label">③貯金箱
+                    <a href="https://github.com/LaravelBasics/java/tree/master/src/%E4%B8%AD%E7%B4%9A%E5%89%8D%E5%8D%8A%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0"
+                        target="_blank">コード</a>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>【問題】</h5>
+                <p>ここまで習った文法を使って自作プログラムを作ってください。<br>
+                    目安として：作業日数は4～5作業日<br>
+                    使う文法は、最初からクラスとインスタンスまで<br>
+                    日数や使う文法は作りたいプログラムに応じて変えてもらってもかまいません。<br>
+                    例：<br>
+                    貯金箱のプログラムを作ります。<br>
+                    貯金箱の状態を表示して何をするか入力してもらいます。<br>
+                    通常の状態は「お金を入れる」「中身を覗く」「開ける」が選択できます。<br>
+                    「お金を入れる」を選択すると、「何円玉を入れますか？」と表示され、選択した硬貨を１枚入れることができます。<br>
+                    「中身を覗く」を選択すると、貯金箱に入っているそれぞれの硬貨の枚数が表示されます。<br>
+                    「開ける」を選択すると、「中から〇〇円出てきた」と合計金額が表示され、貯金箱の中身は空になります。 <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div> --}}
+    {{-- ④のモーダル --}}
+    <div class="modal fade" id="helpModal4" tabindex="-1" aria-labelledby="helpModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 22cm;">
+            <div class="modal-content" style="height: 16cm;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="helpModalLabel4">②青森鹿児島問題</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>二次元配列があり、中には0と1がランダムで入っています。※この二次元配列を世界と呼ぶことにします<br>
+                        世界の中から青森と鹿児島の数を数えて表示します。以下は青森と鹿児島の定義です</p>
+                    <div>
+                        <table class="inline-table" border="1">
+                            <tb>青森</tb>
+                            <tr>
+                                <td class="aomori">1</td>
+                                <td class="aomori">0</td>
+                                <td class="aomori">1</td>
+
+                            </tr>
+                            <tr>
+                                <td class="aomori">1</td>
+                                <td class="aomori">1</td>
+                                <td class="aomori">1</td>
+                            </tr>
+                        </table>
+                        <table class="inline-table" border="1">
+                            <tb>鹿児島</tb>
+                            <tr>
+                                <td class="kagoshima">1</td>
+                                <td class="kagoshima">1</td>
+                                <td class="kagoshima">1</td>
+                            </tr>
+                            <tr>
+                                <td class="kagoshima">1</td>
+                                <td class="kagoshima">0</td>
+                                <td class="kagoshima">1</td>
+                            </tr>
+                        </table>
+                        <table class="inline-table" border="1">
+                            <tb>三重</tb>
+                            <tr>
+                                <td class="mie">1</td>
+                                <td class="mie">0</td>
+                            </tr>
+                            <tr>
+                                <td class="mie">1</td>
+                                <td class="mie">1</td>
+                            </tr>
+                            <tr>
+                                <td class="mie">1</td>
+                                <td class="mie">0</td>
+                            </tr>
+                        </table>
+                        <div class="inline-table">
+                            <p>世界の例 ➡<br>
+                                青森の数: 1個<br>
+                                鹿児島の数: 2個</p>
+                        </div>
+                        <table class="inline-table" border="1">
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <h5>問題 【1】</h5>
+                    10 * 10 の世界を作成し、その中の青森と鹿児島の数を教えてください
+
+                    <h5>問題 【2】</h5>
+                    3000 * 3000 の世界を作成し、その中の青森と鹿児島の数を教えてください。
+                    ただし1秒以内に数え終わってください
+
+                    <h5>問題 【3】</h5>
+                    新しく三重を追加します。
+                    10 * 10 の世界を作成し、その中の青森と鹿児島と三重の数を教えてください
+
+                    <h5>問題 【4】<a
+                            href="https://github.com/LaravelBasics/java/blob/master/src/%E9%9D%92%E6%A3%AE%E9%B9%BF%E5%85%90%E5%B3%B6%E5%95%8F%E9%A1%8C/Main.java"
+                            target="_blank" style="margin-left: 0px;">コード</a></h5>
+                    5 * 5の世界の中に存在できる青森の最大の数と、その配置を求めてください
+
+                    <h5>研究問題 【1】<a
+                            href="https://github.com/LaravelBasics/java/blob/master/src/%E9%9D%92%E6%A3%AE%E9%B9%BF%E5%85%90%E5%B3%B6%E5%95%8F%E9%A1%8C/kennkyuu.java"
+                            target="_blank" style="margin-left: 0px;">コード</a></h5>
+                    10000 * 10000 の世界を作成し、その中の青森と鹿児島の数を教えてください
+                    ただし、１秒以内に数えて終わってください
+
+                    <h5>研究問題 【2】</h5>
+                    100 * 100の世界の中に存在できる青森、鹿児島、三重の合計の最大の数と、その配置を求めてください <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- ブラックジャックモーダル --}}
+    <div class="modal fade" id="helpModal5" tabindex="-1" aria-labelledby="helpModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 25cm;">
+            <div class="modal-content" style="height: 16cm;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="helpModalLabel5">③ブラックジャック
+                        <a href="https://github.com/LaravelBasics/java/blob/master/src/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AF/Game.java"
+                            target="_blank">コード</a>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>【ブラックジャックのルール】</h5>
+                    <p>５２枚のトランプを使用（ジョーカーはありません）<br>
+                        初めにディーラーがカードを2枚ずつ配ります。<br>
+                        ゲーム開始時、『ディーラー』の手は２枚のうち1枚だけ開示されます<br>
+                        『ディーラー』は『プレイヤー』に対してカードの追加を行うかを聞きます。<br>
+                        カードを追加する場合は、【１】を入力<br>
+                        手持ちの点数が十分だと思ったら、【０】を入力。その点数のままディーラーと勝負します。<br>
+                        カードは何枚でも追加できますが、21点を越えてしまうとその時点で『プレイヤー』の負けとなります。<br>
+                        『プレイヤー』が選択を終えた後、最後に『ディーラー』がカードをめくり、17点以上になるまでカードを引き続け、【勝負】となります。<br>
+                        『ディーラー』が22点以上になった場合は、『ディーラー』の負けとなり、『プレイヤー』が21点以下の場合勝利となります。<br>
+                        『ディーラー』よりも21点に近い場合、『プレイヤー』は勝ちとなり、逆に『ディーラー』よりも21点に遠い場合プレイヤーは負けとなります。<br>
+                        同点の場合は引き分けとなります。</p>
+                    <h5>【カードの数え方】</h5>
+                    <p>2～9 まではそのままの数字、10・J・Q・K は「すべて10点」と数えます。<br>
+                        また、 A （エース）は「1点」もしくは「11点」のどちらに数えても構いません。</p>
+                    <h5>【特別な役】</h5>
+                    <p>最初に配られた2枚のカードが「Aと10点札」で21点が完成していた場合を<br>
+                        『ブラックジャック』といい、片方のみの場合その時点で勝ちとなります。</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 id="section3" style="width: 100%; height: auto;
+            margin: 0px 0px 20px 0px; padding: 15px 0px;
+            background-color: rgb(240, 240, 240);
+            font-size: 3em;
+            text-align: center;">【プロフィール】</h1>
         <div>
             <h3>①自己紹介</h3>
-            <p>私はゲームや漫画、アニメが好きで、テクノロジーに関心を持ちながら成長しているプログラミング初心者です。
+            <p>私はゲーム（PSO2、ラチェット＆クランク、モンハン、PSU、ぷよぷよ通、サモンナイト、超次元ゲイムネプテューヌ、遊戯王、FFX-2、FFXIII）や、<br>
+                漫画、アニメが好きで、テクノロジーに関心を持ちながら、プログラミングに挑戦し続けている成長中のエンジニアです。
                 <br>
                 PC関連の職に就くことを目指し、プログラミングの学習を始めました。趣味を通じて得た創造力を、開発の現場で活かしたいと考えています。
             </p>
@@ -229,7 +552,11 @@
         </div>
 
         <div>
-            <h1>【プログラミング学習履歴】</h1>
+            <h1 id="section4" style="width: 100%; height: auto;
+            margin: 0px 0px 20px 0px; padding: 15px 0px;
+            background-color: rgb(240, 240, 240);
+            font-size: 3em;
+            text-align: center;">【プログラミング学習履歴】</h1>
             <h6>2023年10月: プログラミングを0から学習開始</h6>
             <p>10月〜1月19日: 教材ProgateのJava、就労支援カリキュラムのJava基礎、アルゴリズム、2次元配列、例外処理、ファイル入出力など（約4ヶ月）</p>
 
@@ -252,7 +579,7 @@
             <p>8月6日〜8月7日: JavaScriptによるDOM操作</p>
             <p>8月8日〜8月16日: Vue.js</p>
             <p>8月19日〜9月19日: リテラル本社実習</p>
-            <p>9月24日〜9月27日: 実習で作成したコードを置き換えられるか検証④ポートフォリオ、Excelアンケートデータ入力(10件)</p>
+            <p>9月24日〜9月27日: 実習で作成したコードを置き換えられるか検証④実習のコード置き換え、Excelアンケートデータ入力(10件)</p>
             <p>9月28日〜9月30日: ProgateでjQuery</p>
             <p>10月1日〜10月7日: 外部実習のために学習（Linux環境でUbuntu、LAMP構築）</p>
             <p>10月8日〜10月10日: 3日間外部実習、Rocky Linux 9 LAMP環境構築、⑤簡易お問い合わせフォーム作成</p>
@@ -262,6 +589,8 @@
             <p>10月29日〜xx月xx日: 就職活動開始</p>
             <p>11月1日〜11月7日: ポートフォリオの修正、②SNS風アプリの見直し、Vue.jsが本番で正常に動作するよう改善</p>
             <p>11月8日〜11月20日: ポートフォリオの修正、①メルカリ風フリマアプリの見直し、デプロイ後に画像処理が動作するよう仕様を変更</p>
+            <p>11月21日〜12月3日: 履歴書作成</p>
+            <p>12月1日〜12月5日: ポートフォリオにJavaのコードを追加</p>
         </div>
         <div>
             <h3>「最後までご覧いただき、ありがとうございました。これまでの学習と経験を活かし、さらに技術を磨いていきたいと思っております。ご興味をお持ちいただけましたら、ぜひお気軽にご連絡ください。どうぞよろしくお願いいたします。」</h3>
@@ -293,6 +622,35 @@
             },
             toggleSubMenu(menu) {
                 this.menu[menu] = !this.menu[menu];
+            },
+            showHelpModal() {
+                const modal = new bootstrap.Modal(document.getElementById('helpModal'));
+                modal.show();
+            },
+            showHelpModal2() {
+                const modal = new bootstrap.Modal(document.getElementById('helpModal2'));
+                modal.show();
+            },
+            showHelpModal3() {
+                const modal = new bootstrap.Modal(document.getElementById('helpModal3'));
+                modal.show();
+            },
+            showHelpModal4() {
+                const modal = new bootstrap.Modal(document.getElementById('helpModal4'));
+                modal.show();
+            },
+            showHelpModal5() {
+                const modal = new bootstrap.Modal(document.getElementById('helpModal5'));
+                modal.show();
+            },
+            scrollTo(targetId) {
+                const target = document.getElementById(targetId);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth', // スムーズスクロール
+                        block: 'start' // 上部に合わせる
+                    });
+                }
             },
         }
     }).mount('#app');

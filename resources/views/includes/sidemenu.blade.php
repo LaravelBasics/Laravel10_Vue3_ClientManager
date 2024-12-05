@@ -1,7 +1,10 @@
 <nav class="nav flex-column">
     <!-- <a class="nav-link" href="#">トップページ</a> -->
-    <a class="nav-link" href="/">ポートフォリオ</a>
-
+    <!-- <a class="nav-link" href="/">【トップページ】</a> -->
+    <a class="nav-link" href="#section1" @click.prevent="scrollTo('section1')">【Laravelプロジェクト一覧】</a>
+    <a class="nav-link" href="#section2" @click.prevent="scrollTo('section2')">【Javaコードのみ】</a>
+    <a class="nav-link" href="#section3" @click.prevent="scrollTo('section3')">【プロフィール】</a>
+    <a class="nav-link" href="#section4" @click.prevent="scrollTo('section4')">【プログラミング学習履歴】</a>
     <!-- クライアントマスタ管理 -->
     <!-- <a class="nav-link" href="#" @click="toggleSubMenu('clientMaster')">
         A
