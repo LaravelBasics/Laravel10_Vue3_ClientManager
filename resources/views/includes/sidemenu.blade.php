@@ -1,30 +1,10 @@
 <nav class="nav flex-column">
-    <!-- <a class="nav-link" href="#">トップページ</a> -->
-    <a class="nav-link" href="/">【トップページ】</a>
-    <a class="nav-link" href="#section1" @click.prevent="scrollTo('section1')">【Laravelプロジェクト一覧】</a>
+    <!-- <a class="nav-link" href="/">【トップページ】</a> -->
+    <a class="nav-link" href="#section1" @click.prevent="scrollTo('section1')">【PHP(Laravel)アプリ一覧】</a>
     <a class="nav-link" href="#section2" @click.prevent="scrollTo('section2')">【Javaコードのみ】</a>
     <a class="nav-link" href="#section3" @click.prevent="scrollTo('section3')">【プロフィール】</a>
     <a class="nav-link" href="#section4" @click.prevent="scrollTo('section4')">【プログラミング学習履歴】</a>
-    <!-- クライアントマスタ管理 -->
-    <!-- <a class="nav-link" href="#" @click="toggleSubMenu('clientMaster')">
-        A
-        <span class="float-end" v-if="menu.clientMaster">-</span>
-        <span class="float-end" v-else>+</span>
-    </a>
-    <div v-if="menu.clientMaster">
-        <a class="nav-link ms-3" href="#" @click="toggleSubMenu('clientCorporation')">A-1</a>
-        <div v-if="menu.clientCorporation">
-            <a class="nav-link ms-3 ms-5" href="#">AA-1</a>
-            <a class="nav-link ms-3 ms-5" href="#">AA-2</a>
-        </div>
-        <a class="nav-link ms-3" href="#" @click="toggleSubMenu('client')">A-2</a>
-        <div v-if="menu.client">
-            <a class="nav-link ms-3 ms-5" href="#">AA-3</a>
-            <a class="nav-link ms-3 ms-5" href="#">AA-4</a>
-        </div>
-    </div> -->
 
-    <!-- 従業員マスタ管理 -->
     <a class="nav-link" href="#" @click="toggleSubMenu('location')">学習したプログラミング
         <span class="float-end" v-if="menu.employeeMaster">-</span>
         <span class="float-end" v-else>+</span>
@@ -35,17 +15,13 @@
         <a class="nav-link ms-3 ms-5" href="{{ route('learning-days.index') }}">学習した日数</a>
         <a class="nav-link ms-3 ms-5" href="{{ route('artifacts.index') }}">作成した成果物</a>
     </div>
-    <!-- <a class="nav-link" href="#" @click="toggleSubMenu('employeeMaster')">
-        プログラミング
-    </a> -->
-    <!-- <div v-if="menu.employeeMaster"> -->
-        <!-- <a class="nav-link ms-3" href="#" @click="toggleSubMenu('employee')">B-1</a>
-        <div v-if="menu.employee">
-            <a class="nav-link ms-3 ms-5" href="#">BB-1</a>
-            <a class="nav-link ms-3 ms-5" href="#">BB-2</a>
-            <a class="nav-link ms-3 ms-5" href="#">BB-3</a>
-        </div> -->
-    <!-- </div> -->
-
-    <!-- <a class="nav-link" href="#">マイページ</a> -->
+    <div>
+        <strong class="sepia-bg2"><span style="background-color: #BCF4BC;">全アプリ共通のアカウント</span></strong>
+    </div>
+    <div>
+        <strong class="sepia-bg2">メールアドレス<span style="padding-left: 20px;">test@test</sapn></strong>
+    </div>
+    <div>
+        <strong class="sepia-bg2">パスワード<span style="padding-left: 44px;">testtest</sapn></strong>
+    </div>
 </nav>
