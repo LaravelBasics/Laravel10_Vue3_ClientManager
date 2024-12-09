@@ -36,6 +36,12 @@
     /* ペールブルーのCSS */
     .pale-blue-bg {
         background-color: #AFDCEC;
+        width: 100%;
+        height: auto;
+        margin: 0px 0px 20px 0px;
+        padding: 15px 0px;
+        font-size: 3em;
+        text-align: center;
     }
 
     /* 背景オフホワイトのCSS */
@@ -52,16 +58,12 @@
 @section('content')
 
 <div class="container mt-4">
-    <h1 id="section1" style="width: 100%; height: auto;
-            margin: 0px 0px 20px 0px; padding: 15px 0px;
-            background-color: rgb(240, 240, 240);
-            font-size: 3em;
-            text-align: center;">【PHP(Laravel)アプリ一覧】
+    <h1 class="pale-blue-bg" id="section1">【PHP(Laravel)アプリ一覧】
     </h1>
     <div class="off-white-bg">
         <div>
             <div>
-                <h2 class="mie">サーバーレス環境で動作するPHPアプリ（Vercel + PostgreSQL）</h2>
+                <h2 class="mie">サーバーレス環境で動作するPHPアプリ（Vercel + Laravel + PostgreSQL）</h2>
                 <span style="font-weight: bold;">
                     ※Vercelの無料プランではリソース制限により、特に画像処理で504エラーが発生する場合があります。エラー時は少し時間を置いて再試行してください。
                 </span>
@@ -75,21 +77,22 @@
                 アプリ製作期間：３週間
             </p>
             <p><strong class="mie">「アプリの説明」</strong><br>
-                メールアドレス、パスワードを入力してログインすると、プロフィールから名前、画像を編集出来ます。<br>
-                画面左上の Melpitアイコン をクリックするとトップページに移動。ログイン状態で画面右上の▼付近をクリックするとメニューが表示されます。<br>
+                メールアドレス、パスワードを入力してログイン、ログイン状態で画面右上の▼付近をクリックするとメニューが表示されます。<br>
+                プロフィールから名前、画像を編集出来ます。<br>
+                画面左上の Melpitアイコン をクリックするとトップページに移動。<br>
                 また、商品を出品、購入（購入済みの物はSOLDと表示）、出品中の物は検索が可能です。<br>
                 <!-- ※ログインしていない場合はログインページに移動します。 -->
                 <!-- <br> -->
-                本来の処理は画像をクリックするとエクスプローラーが開いてPCから画像を選択できます。（詳細は「デプロイ」に記述）
+                本来の画像処理は、クリックするとエクスプローラーが開いてPCから画像を選択できます。（詳細は「デプロイ」に記述）
                 <!-- vercel(2024年10月)はPHPをサポートしていないため、仕様を変更しました。 -->
             </p>
-            <p><strong class="mie">「振り返り」</strong><br>
+            <p><strong>「振り返り」</strong><br>
                 教材の環境と異なるためエラー対応や、Laravel 6でLaravel 7の機能再現に挑戦しました。
                 <br>
                 クレジットカード決済（PAY.JP）、Mailtrap.ioによるメール送受信、画像の保存処理にJavaScriptを利用するなど、基礎を学びつつエラー解決に取り組みました。
             </p>
 
-            <p><strong class="mie">「デプロイ」</strong><br>
+            <p><strong>「デプロイ」</strong><br>
                 Windowsで作成したプロジェクト①をLinuxにコピーし、Laravel 6を使用して、デプロイに挑戦しました。
                 <br>
                 画像処理を除く機能は正常に動作しましたが、Vercelのサーバーレス環境ではPHPのライブラリが制限されており、
@@ -120,7 +123,7 @@
 
                 画面左上のMemoをクリックすると、トップページに移動します。画面右上の投稿するから記事を新規投稿、トップページの︙マークを押すと記事を編集できます。
             </p>
-            <p><strong class="mie">「振り返り」</strong><br>
+            <p><strong>「振り返り」</strong><br>
                 初めてのVue.jsとLaravelの環境構築に苦戦し、
                 <br>
                 特にnpm依存関係のエラーでVue.jsが2から3へ自動的にバージョンアップされたため記述の違いにさらに時間がかかりました。
@@ -129,7 +132,7 @@
                 <br>
                 また、Googleアカウントでのログイン機能の実装も困難でしたが、無事に実現しました。
             </p>
-            <p><strong class="mie">「デプロイ」</strong><br>
+            <p><strong>「デプロイ」</strong><br>
                 Linux上でLaravel 6を用いたデプロイに挑戦した際、Laravel Mixのmix.jsを使ったVue.js機能が本番環境で動作しないという課題に直面しました。
                 <br>
                 これに対して、npm run productionでビルドを行い、vercel.jsonの設定を見直した後、npx vercel --forceで再デプロイすることでVue.jsが本番で正常に動作するよう改善しました。
@@ -152,14 +155,14 @@
                 ログイン後、Booksをクリックすると、本管理ページに移動します。<br>
                 登録、編集、削除が行える機能や、ページネーションに対応しています。
             </p>
-            <p><strong class="mie">「振り返り」</strong><br>
+            <p><strong>「振り返り」</strong><br>
                 就労支援の職員が作成した基本設計書をもとに、本管理アプリの機能変更と追加を行いました。
                 <br>
                 Laravelシーダーのファクトリークラスでダミーデータを生成した際に、ダミーデータを英語から日本語に変更するのに苦戦しました。
                 <br>
                 職員に動作確認をしてもらい機能自体は完成しましたが、Reactはあまり理解できませんでした。
             </p>
-            <p><strong class="mie">「デプロイ」</strong><br>
+            <p><strong>「デプロイ」</strong><br>
                 Reactのjsxファイルでデプロイに挑戦しました。成功するか不安でしたが、無事に動作しました。
             </p>
             <br>
@@ -176,13 +179,15 @@
                 実習中のアプリ製作期間：１か月（既存のコードを改修した期間：１週間）
             </p>
             <p><strong class="mie">「アプリの説明」</strong><br>
-                元の仕様グループ会社に紐付く支社を、プログラミング言語に紐付く教材、教材に紐付く学習した日数、学習した日数に紐付く作成した成果物に変更しました。<br>
-                <strong class="mie" style="color: #333333; font-weight: bold;">空のまま検索ボタンをクリックすると、データベースから全件取得されます。</strong><br>
+                元の仕様"A"に紐付く"B"から、プログラミング言語に紐付く教材、教材に紐付く学習した日数、のように変更しました。<br>
+                <strong class="mie" style="color: #333333; font-weight: bold;">空のまま検索ボタンをクリックすると、データベースから全件取得されます。
+                    <br>
+                    左のサイドメニュー: 学習したプログラミングをクリックすると、４つの画面にアクセスできます。
+                </strong><br>
                 登録、編集、削除が行える機能や、バリデーション機能、学習日数コードなどをクリックするとソート機能（並び替え、昇順⇔降順）が行われます。<br>
-                学習した日数一覧画面などに移動後、登録などの際に、プログラミング言語（セレクトボックス）をクリック後、<br>
-                教材をクリックすると、プログラミング言語に紐付いた教材が取得されます。（取得まで約２～３秒タイムラグがあります）<br>
+                例：学習した日数一覧画面に移動後、登録などの際に、プログラミング言語（セレクトボックス）をクリック後、<br>
+                教材をクリックすると、プログラミング言語に紐付いた教材が取得されます。（取得までタイムラグがあります）<br>
                 登録済みデータの表示部分はバックエンド、編集ボタンをクリックした時、バックからフロントにデータを渡しています。<br>
-                <span class="mie" style="color: #333333; font-weight: bold;">左のサイドメニュー: 学習したプログラミングをクリックすると、４つの画面にアクセスできます。</sapn>
             </p>
             <p><strong>「振り返り」</strong><br>
                 社外秘の情報が含まれているため職員に確認を取り、実習で作成したコードを置き換えることに挑戦しました。
@@ -204,13 +209,13 @@
                 <br>
                 アプリ製作期間：３～４時間（環境構築を除いた時間）
             </p>
-            <p><strong class="mie">「アプリの説明＆振り返り」</strong><br>
+            <p><strong class="mie">「アプリの説明」</strong><br>
                 外部実習で制作したアプリ。フロントエンドは最低限の機能（バリデーション、送信時に同意するチェックボックスなど）で実装しました。<br>
                 テスト用にメールトラップで受信を確認しました。
                 <br>
                 Laravel 11は初めて触ったので、メール、管理者、送信者など難しかったです。
             </p>
-            <p><strong class="mie">「デプロイ」</strong><br>
+            <p><strong>「デプロイ」</strong><br>
                 デプロイ後も動作するのか気になったため挑戦し、無事にメールトラップで受信できました。</p>
             <br>
         </div>
@@ -227,7 +232,7 @@
             <p><strong class="mie">「アプリの説明」</strong><br>
                 画面右上から、メールアドレス、パスワードを入力してログインできます。
             </p>
-            <p><strong class="mie">「振り返り」（2024年10月）</strong><br>
+            <p><strong>「振り返り」（2024年10月）</strong><br>
                 Laravelでデプロイに挑戦。
                 就労支援の職員が作成した教材をもとに、Docker（WSL）とVercel(gihub連携)を学習しました。
                 <br>
@@ -236,7 +241,7 @@
                 最終的に、成功した設定をもとに必要な項目を逆算して整理、職員の方もデプロイ成功に至ったことが何よりの成果で、大きな達成感を感じました。
             </p>
 
-            <p><strong class="mie">「デプロイ」</strong><br>
+            <p><strong>「デプロイ」</strong><br>
                 ローカルでのPostgreSQLインストールの必要性や接続方法の設定など、チャットGPTを活用しつつ、100回以上デプロイを試行してようやく成功に至りました。
                 <br>
                 Dockerはコンテナで使用するDockerfileの作成に難航し、実習で経験したRockyLinuxを使って試行した結果、Linuxでは無事に成功しました。
@@ -244,12 +249,7 @@
             <br>
         </div>
     </div>
-    <h1 id="section2"
-        style="width: 100%; height: auto;
-           margin: 0px 0px 20px 0px; padding: 15px 0px;
-           background-color: rgb(240, 240, 240);
-           font-size: 3em;
-           text-align: center;">
+    <h1 class="pale-blue-bg" id="section2">
         【Javaコードのみ】
     </h1>
 
@@ -544,11 +544,7 @@
         </div>
     </div>
     <div>
-        <h1 id="section3" style="width: 100%; height: auto;
-            margin: 0px 0px 20px 0px; padding: 15px 0px;
-            background-color: rgb(240, 240, 240);
-            font-size: 3em;
-            text-align: center;">【プロフィール】</h1>
+        <h1 class="pale-blue-bg" id="section3">【プロフィール】</h1>
         <div class="off-white-bg">
             <div>
                 <h3>①自己紹介</h3>
@@ -619,11 +615,7 @@
         </div>
 
         <div>
-            <h1 id="section4" style="width: 100%; height: auto;
-            margin: 0px 0px 20px 0px; padding: 15px 0px;
-            background-color: rgb(240, 240, 240);
-            font-size: 3em;
-            text-align: center;">【プログラミング学習履歴】</h1>
+            <h1 class="pale-blue-bg" id="section4">【プログラミング学習履歴】</h1>
             <div class="off-white-bg">
                 <h6 class="mie">2023年10月: プログラミングを0から学習開始</h6>
                 <p>10月〜1月19日: 教材ProgateのJava、就労支援カリキュラムのJava基礎、アルゴリズム、2次元配列、例外処理、ファイル入出力など（約4ヶ月）</p>
@@ -659,7 +651,7 @@
                 <p>11月8日〜11月20日: ポートフォリオの更新、①メルカリ風フリマアプリの見直し、デプロイ後に画像処理が動作するよう仕様を変更</p>
                 <p>11月21日〜12月7日: ポートフォリオにJavaのコードを追加、ポートフォリオ更新</p>
                 <div>
-                    <h3>「最後までご覧いただき、ありがとうございました。これまでの学習と経験を活かし、さらに技術を磨いていきたいと思っております。ご興味をお持ちいただけましたら、ぜひお気軽にご連絡ください。どうぞよろしくお願いいたします。」</h3>
+                    <h3 class="mie">「最後までご覧いただき、ありがとうございました。これまでの学習と経験を活かし、さらに技術を磨いていきたいと思っております。ご興味をお持ちいただけましたら、ぜひお気軽にご連絡ください。どうぞよろしくお願いいたします。」</h3>
                 </div>
             </div>
         </div>
@@ -709,27 +701,6 @@
             showHelpModal5() {
                 const modal = new bootstrap.Modal(document.getElementById('helpModal5'));
                 modal.show();
-            },
-            scrollTo(targetId) {
-                const target = document.getElementById(targetId);
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth', // スムーズスクロール
-                        block: 'start' // 上部に合わせる
-                    });
-                }
-            },
-            scrollTo2(sectionId) {
-                // const element = document.getElementById(sectionId);
-                // if (element) {
-                //     window.scrollTo({
-                //         top: element.offsetTop,
-                //         behavior: 'smooth'
-                //     });
-                // }
-                document.getElementById(section).scrollIntoView({
-                    behavior: 'smooth'
-                });
             },
         }
     }).mount('#app');
