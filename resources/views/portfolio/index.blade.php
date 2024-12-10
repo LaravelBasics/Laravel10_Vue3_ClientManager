@@ -17,7 +17,7 @@
 
     .inline-table {
         display: inline-block;
-        margin-right: 20px;
+        margin-right: 1.25rem;
         /* テーブル間の余白調整 */
         vertical-align: top;
         /* 上揃え */
@@ -38,9 +38,11 @@
         background-color: #AFDCEC;
         width: 100%;
         height: auto;
-        margin: 0px 0px 20px 0px;
-        padding: 15px 0px;
-        font-size: 3em;
+        margin: 0 0 1.25rem 0;
+        /* 20px -> 1.25rem */
+        padding: 0.9375rem 0;
+        /* 15px -> 0.9375rem */
+        font-size: 3rem;
         text-align: center;
     }
 
@@ -52,6 +54,25 @@
     /* 背景アイボリー */
     .ivory-bg {
         background-color: #FFFFF0;
+    }
+
+    @media (max-width: 48rem) {
+        .modal-dialog {
+            max-width: 90%;
+            /* モーダルの幅を90%にする */
+        }
+
+        .modal-content {
+            max-height: 80vh;
+            /* ビューポートの80%に制限 */
+            overflow-y: auto;
+            /* 縦方向にスクロール */
+        }
+
+        .modal-body p {
+            font-size: 0.9rem;
+            /* 小さい画面ではフォントサイズを少し小さく */
+        }
     }
 </style>
 @endsection
@@ -68,7 +89,7 @@
                     ※Vercelの無料プランではリソース制限により、特に画像処理で504エラーが発生する場合があります。エラー時は少し時間を置いて再試行してください。
                 </span>
                 <h3><a href="https://laravel6-flea-market.vercel.app/" target="_blank">①メルカリ風フリマアプリ</a>
-                    <span style="margin-right: 50px;"></span>
+                    <span style="margin-right: 3.125rem;"></span>
                     <a href="https://github.com/LaravelBasics/Laravel6_FleaMarket/tree/main" target="_blank">①GitHub</a>
                 </h3>
             </div>
@@ -108,7 +129,7 @@
         <div>
             <h3>
                 <a href="https://laravel6-sns.vercel.app/" target="_blank">②SNS風アプリ</a>
-                <span style="margin-right: 50px;"></span>
+                <span style="margin-right: 3.125rem;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel6_SNS" target="_blank">②GitHub</a>
             </h3>
             <p>開発環境: Windows, Laravel 6, Vue.js 3, MySQL（教材の環境: MacOS, Laravel 6, Docker, Vue.js 2, PostgreSQL）
@@ -118,7 +139,8 @@
             <p><strong class="mie">「アプリの説明」</strong><br>
                 メールアドレス、パスワードを入力してログインすると、記事の投稿やユーザーのフォローなどができます。<br>
                 ログイン後、ハートを押すと「いいね」が付きます（赤の状態でクリックすると逆になります。※反映までタイムラグ５～６秒）<br>
-                ＃タグをクリックすると、クリックしたタグを検索。ユーザー名付近をクリックすると、クリックしたユーザーのページへ移動、フォローや記事をみれます。（フォロー中の場合、フォローが外れます）<br>
+                ＃タグをクリックすると、クリックしたタグを検索。ユーザー名付近をクリックすると、<br>
+                クリックしたユーザーのページへ移動、フォローや記事をみれます。（フォロー中の場合、フォローが外れます）<br>
                 ※ログインしていない場合一部の機能は、ポップアップで説明が出ます。<br>
 
                 画面左上のMemoをクリックすると、トップページに移動します。画面右上の投稿するから記事を新規投稿、トップページの︙マークを押すと記事を編集できます。
@@ -143,7 +165,7 @@
         <div>
             <h3>
                 <a href="https://laravel10-books.vercel.app/" target="_blank">③本管理アプリ</a>
-                <span style="margin-right: 50px;"></span>
+                <span style="margin-right: 3.125rem;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel10_Books" target="_blank">③GitHub</a>
             </h3>
             <p>開発環境: Windows, Laravel 10, React, 認証パッケージBreeze, PostgreSQL
@@ -170,7 +192,7 @@
         <div>
             <h3>
                 <a href="https://laravel10-vue3-client-manager.vercel.app/languages" target="_blank">④顧客管理システムのコードを置き換えたアプリ</a>
-                <span style="margin-right: 50px;"></span>
+                <span style="margin-right: 3.125rem;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel10_Vue3_ClientManager" target="_blank">④GitHub</a>
             </h3>
             </p>
@@ -179,21 +201,20 @@
                 実習中のアプリ製作期間：１か月（既存のコードを改修した期間：１週間）
             </p>
             <p><strong class="mie">「アプリの説明」</strong><br>
-                元の仕様"A"に紐付く"B"から、プログラミング言語に紐付く教材、教材に紐付く学習した日数、のように変更しました。<br>
-                <strong class="mie" style="color: #333333; font-weight: bold;">空のまま検索ボタンをクリックすると、データベースから全件取得されます。
-                    <br>
-                    左のサイドメニュー: 学習したプログラミングをクリックすると、４つの画面にアクセスできます。
-                </strong><br>
-                登録、編集、削除が行える機能や、バリデーション機能、学習日数コードなどをクリックするとソート機能（並び替え、昇順⇔降順）が行われます。<br>
                 例：学習した日数一覧画面に移動後、登録などの際に、プログラミング言語（セレクトボックス）をクリック後、<br>
                 教材をクリックすると、プログラミング言語に紐付いた教材が取得されます。（取得までタイムラグがあります）<br>
+                <strong class="mie" style="color: #333333; font-weight: bold;">※空のまま検索ボタンをクリックすると、データベースから全件取得されます。
+                    <br>
+                </strong>
+                ※左のサイドメニュー: 学習したプログラミングをクリックすると、４つの画面にアクセスできます。<br>
+                登録、編集、削除が行える機能や、バリデーション機能、学習日数コードなどをクリックするとソート機能（並び替え、昇順⇔降順）が行われます。<br>
                 登録済みデータの表示部分はバックエンド、編集ボタンをクリックした時、バックからフロントにデータを渡しています。<br>
             </p>
             <p><strong>「振り返り」</strong><br>
-                社外秘の情報が含まれているため職員に確認を取り、実習で作成したコードを置き換えることに挑戦しました。
+                社外秘の情報が含まれているため職員に確認を取り、実習で作成したコードを置き換えることに挑戦しました。<br>
+                元の仕様"A"に紐付く"B"から、プログラミング言語に紐付く教材、教材に紐付く学習した日数、のように変更しました。
                 <br>
                 マイグレーションのテーブル名、ユニークカラムをすべて変更し、それに伴うモデル、コントローラー、リクエストクラス、ブレードなどを修正しました。
-                動作するか不安でしたが無事に完成しました。
             </p>
             <p><strong>「デプロイ」</strong><br>
                 CDNを使用していたため、Vue.jsやBootstrapの動作も問題なくスムーズにデプロイできました。</p>
@@ -202,7 +223,7 @@
         <div>
             <h3>
                 <a href="https://laravel11-contact-form.vercel.app/" target="_blank">⑤簡易お問い合わせフォームアプリ</a>
-                <span style="margin-right: 50px;"></span>
+                <span style="margin-right: 3.125rem;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel11_ContactForm/tree/master" target="_blank">⑤GitHub</a>
             </h3>
             <p>開発環境: バーチャルボックス, LAMP(RockyLinux9.4, apache 2.4, MySQL 8.0, PHP8.2), Laravel 11
@@ -222,7 +243,7 @@
         <div>
             <h3>
                 <a href="https://laravel10-breeze-demo.vercel.app/" target="_blank">⑥Breezeを使ったログイン機能のデプロイに挑戦したアプリ</a>
-                <span style="margin-right: 50px;"></span>
+                <span style="margin-right: 3.125rem;"></span>
                 <a href="https://github.com/LaravelBasics/Laravel10_Breeze_Demo/tree/aaa" target="_blank">⑥GitHub</a>
             </h3>
             <p>開発環境: Windows, Laravel 10, 認証パッケージBreeze, PostgreSQL
@@ -256,20 +277,20 @@
     <!-- <h2>「アップル梅田カリキュラムの一部」</h2> -->
     <div class="off-white-bg">
         {{-- <h3>「初級前半課題プログラム」<h3> --}}
-        <h4><button type="button" class="btn btn-link" @click="showHelpModal" style="font-size: 24px;">
+        <h4><button type="button" class="btn btn-link" @click="showHelpModal" style="font-size: 1.5rem;">
                 ①FizzBuzz
             </button>
             <a href="https://github.com/LaravelBasics/java/blob/master/src/FizzBuzz7_1/FizzBuzz.java"
-                target="_blank" style="margin-left: 50px;">①コード(GitHub)</a>
+                target="_blank" style="margin-left: 3.125rem;">①コード(GitHub)</a>
         </h4>
         <p>開発環境：eclipse<br>制作期間：1日</p>
         <p>「<strong class="mie">振り返り</strong>」<br>
             コード完成後（コメントアウトしている箇所）、職員からフィードバックを受けて、条件式の部分をメソッド化しました。</p>
-        {{-- <h4><button type="button" class="btn btn-link" @click="showHelpModal2" style="font-size: 24px;">
+        {{-- <h4><button type="button" class="btn btn-link" @click="showHelpModal2" style="font-size: 1.5rem;">
                     ②奇数偶数
                 </button>
                 <a href="https://github.com/LaravelBasics/java/blob/master/src/FizzBuzz7_2/FizzBuzz7_2.java"
-                    target="_blank" style="margin-left: 50px;">②コード(GitHub)</a>
+                    target="_blank" style="margin-left: 3.125rem;">②コード(GitHub)</a>
             </h4>
             <h5>開発環境：eclipse<br>制作期間：2日</h5>
             <p>「<strong class="mie">振り返り</strong>」<br>
@@ -279,24 +300,24 @@
         {{-- <div>
     <h3>「中級前半自作プログラム」<h3>
 
-            <h4><button type="button" class="btn btn-link" @click="showHelpModal3" style="font-size: 24px;">
+            <h4><button type="button" class="btn btn-link" @click="showHelpModal3" style="font-size: 1.5rem;">
                     ③貯金箱
                 </button>
                 <a href="https://github.com/LaravelBasics/java/tree/master/src/%E4%B8%AD%E7%B4%9A%E5%89%8D%E5%8D%8A%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0"
-                    target="_blank" style="margin-left: 50px;">③コード(GitHub)</a>
+                    target="_blank" style="margin-left: 3.125rem;">③コード(GitHub)</a>
             </h4>
             <p>開発環境：eclipse<br>制作期間：2日</p>
             <p>「<strong class="mie">振り返り</strong>」処理の仕方が分からない部分は職員に質問し、試行錯誤しながら挑戦しました。</p>
 </div> --}}
 
         <div>
-            <h4><button type="button" class="btn btn-link" @click="showHelpModal4" style="font-size: 24px;">
+            <h4><button type="button" class="btn btn-link" @click="showHelpModal4" style="font-size: 1.5rem;">
                     ②青森鹿児島問題（二次元配列）
                 </button>
                 <a href="https://github.com/LaravelBasics/java/blob/master/src/%E9%9D%92%E6%A3%AE%E9%B9%BF%E5%85%90%E5%B3%B6%E5%95%8F%E9%A1%8C/Main.java"
-                    target="_blank" style="margin-left: 50px;">②問題 【4】 コード(GitHub)</a>
+                    target="_blank" style="margin-left: 3.125rem;">②問題 【4】 コード(GitHub)</a>
                 <a href="https://github.com/LaravelBasics/java/blob/master/src/%E9%9D%92%E6%A3%AE%E9%B9%BF%E5%85%90%E5%B3%B6%E5%95%8F%E9%A1%8C/kennkyuu.java"
-                    target="_blank" style="margin-left: 50px;">②研究問題 【1】 コード(GitHub)</a>
+                    target="_blank" style="margin-left: 3.125rem;">②研究問題 【1】 コード(GitHub)</a>
             </h4>
             <p>開発環境：eclipse<br>制作期間：約2週間</p>
             <p>「<strong class="mie">振り返り</strong>」<br>
@@ -309,11 +330,11 @@
         </div>
 
         <div>
-            <h4><button type="button" class="btn btn-link" @click="showHelpModal5" style="font-size: 24px;">
+            <h4><button type="button" class="btn btn-link" @click="showHelpModal5" style="font-size: 1.5rem;">
                     ③ブラックジャック
                 </button>
                 <a href="https://github.com/LaravelBasics/java/blob/master/src/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AF/Game.java"
-                    target="_blank" style="margin-left: 50px;">③コード(GitHub)</a>
+                    target="_blank" style="margin-left: 3.125rem;">③コード(GitHub)</a>
             </h4>
             <p>開発環境：eclipse<br>制作期間：3週間</p>
             <p>「<strong class="mie">振り返り</strong>」<br>ルールや処理の順番（一人用にするか、対戦できるようにするか、カードを引く順番など）を決めて、<br>
@@ -323,8 +344,8 @@
 
         <!-- ①のモーダル -->
         <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" style="max-width: 20cm;">
-                <div class="modal-content" style="height: 10cm;">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 47.24rem;">
+                <div class="modal-content" style="height: 23.622rem;">
                     <div class="modal-header">
                         <h5 class="modal-title" id="helpModalLabel">①FizzBuzz
                             <a href="https://github.com/LaravelBasics/java/blob/master/src/FizzBuzz7_1/FizzBuzz.java"
@@ -345,8 +366,8 @@
         </div>
         {{-- ②のモーダル --}}
         {{-- <div class="modal fade" id="helpModal2" tabindex="-1" aria-labelledby="helpModalLabel2" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 20cm;">
-        <div class="modal-content" style="height: 10cm;">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 47.24rem;">
+        <div class="modal-content" style="height: 23.622rem;">
             <div class="modal-header">
                 <h5 class="modal-title" id="helpModalLabel2">②奇数偶数
                     <a href="https://github.com/LaravelBasics/java/blob/master/src/FizzBuzz7_2/FizzBuzz7_2.java"
@@ -367,8 +388,8 @@
 </div> --}}
         {{-- ③のモーダル --}}
         {{-- <div class="modal fade" id="helpModal3" tabindex="-1" aria-labelledby="helpModalLabel3" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 20cm;">
-        <div class="modal-content" style="height: 11cm;">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 47.24rem;">
+        <div class="modal-content" style="height: 11vh;">
             <div class="modal-header">
                 <h5 class="modal-title" id="helpModal3Label">③貯金箱
                     <a href="https://github.com/LaravelBasics/java/tree/master/src/%E4%B8%AD%E7%B4%9A%E5%89%8D%E5%8D%8A%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0"
@@ -396,8 +417,8 @@
 </div> --}}
         {{-- ④のモーダル --}}
         <div class="modal fade" id="helpModal4" tabindex="-1" aria-labelledby="helpModalLabel4" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" style="max-width: 22cm;">
-                <div class="modal-content" style="height: 16cm;">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 52.03rem;">
+                <div class="modal-content" style="height: 37.80rem;">
                     <div class="modal-header">
                         <h5 class="modal-title" id="helpModalLabel4">②青森鹿児島問題</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -491,12 +512,12 @@
 
                         <h5>問題 【4】<a
                                 href="https://github.com/LaravelBasics/java/blob/master/src/%E9%9D%92%E6%A3%AE%E9%B9%BF%E5%85%90%E5%B3%B6%E5%95%8F%E9%A1%8C/Main.java"
-                                target="_blank" style="margin-left: 0px;">コード(GitHub)</a></h5>
+                                target="_blank" style="margin-left: 0;">コード(GitHub)</a></h5>
                         5 * 5の世界の中に存在できる青森の最大の数と、その配置を求めてください
 
                         <h5>研究問題 【1】<a
                                 href="https://github.com/LaravelBasics/java/blob/master/src/%E9%9D%92%E6%A3%AE%E9%B9%BF%E5%85%90%E5%B3%B6%E5%95%8F%E9%A1%8C/kennkyuu.java"
-                                target="_blank" style="margin-left: 0px;">コード(GitHub)</a></h5>
+                                target="_blank" style="margin-left: 0;">コード(GitHub)</a></h5>
                         10000 * 10000 の世界を作成し、その中の青森と鹿児島の数を教えてください
                         ただし、１秒以内に数えて終わってください
 
@@ -509,8 +530,8 @@
         </div>
         {{-- ブラックジャックモーダル --}}
         <div class="modal fade" id="helpModal5" tabindex="-1" aria-labelledby="helpModalLabel5" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" style="max-width: 25cm;">
-                <div class="modal-content" style="height: 16cm;">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 59.05rem;">
+                <div class="modal-content" style="height: 37.80rem;">
                     <div class="modal-header">
                         <h5 class="modal-title" id="helpModalLabel5">③ブラックジャック
                             <a href="https://github.com/LaravelBasics/java/blob/master/src/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AF/Game.java"
@@ -565,7 +586,7 @@
                 <h3>③現在学習中の言語や環境</h3>
                 <p><strong>プログラミング言語:</strong> PHP, HTML5, CSS3, JavaScript
                     <br>
-                    <strong>フレームワーク: </strong>Laravel, Vue.js 3.3, Bootstrap 5.3
+                    <strong>フレームワーク: </strong>Laravel, Vue.js 3.4, Bootstrap 5.3
                     <br>
                     <strong>データベース:</strong> MySQL, PostgreSQL
                     <br>
@@ -595,7 +616,7 @@
                     <br>
                     課題②として⑤簡易問い合わせフォームを作成（テスト用にメールトラップで受信を確認しました）。
                     <br>
-                    成果: 初めてLinuxを学習（実習1週間前の情報は、バーチャルボックスでLAMP環境を構築することのみ、事前の学習期間は1週間）し、<br>
+                    成果: 初めてLinuxを学習（実習1週間前の情報は、バーチャルボックスでLAMP環境を構築することのみ、事前の学習期間は1週間）、<br>
                     即戦力を求めていたため全体的に難しい課題だったものの、事前学習の甲斐もあり達成できました。
                 </p>
             </div>

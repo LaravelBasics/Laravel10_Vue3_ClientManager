@@ -20,9 +20,9 @@
         <strong class="sepia-bg2"><span style="background-color: #BCF4BC;">全アプリ共通のアカウント</span></strong>
     </div>
     <div>
-        <strong class="sepia-bg2">メールアドレス<span style="padding-left: 20px;">test@test</sapn></strong>
+        <strong class="sepia-bg2">メールアドレス<span style="padding-left: 1.25rem;">test@test</sapn></strong>
     </div>
     <div>
-        <strong class="sepia-bg2">パスワード<span style="padding-left: 44px;">testtest</sapn></strong>
+        <strong class="sepia-bg2">パスワード<span style="padding-left: 2.75;">testtest</sapn></strong>
     </div>
 </nav>

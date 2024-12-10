@@ -40,12 +40,12 @@
 
         /* ハンバーガーアイコンと最終更新日の配置調整 */
         .position-absolute {
-            top: 10px;
+            top: 0.625rem;
             /* 上からの距離を調整 */
         }
 
         /* スクリーン幅が768px未満のときに、positionを解除 */
-        @media (max-width: 768px) {
+        @media (max-width: 48rem) {
             .sidebar {
                 position: static;
                 /* スクロール追従を解除 */
@@ -56,9 +56,9 @@
             }
 
             .navbar-toggler {
-                top: 5px;
+                top: 0.3125rem;
                 /* 必要に応じて調整 */
-                right: 5px;
+                right: 0.3125rem;
             }
 
             .navbar .container-fluid {
@@ -72,9 +72,9 @@
             }
 
             .position-absolute {
-                top: 5px;
+                top: 0.3125rem;
                 /* 小画面用の微調整 */
-                right: 5px;
+                right: 0.3125rem;
             }
         }
 
@@ -96,7 +96,7 @@
             /* 相対位置指定 */
             top: 0;
             /* 上からの位置（デフォルトは0） */
-            left: 15px;
+            left: 0.9375rem;
             /* 左から50px移動（右に移動） */
             text-align: right;
         }
@@ -117,15 +117,15 @@
 
         /* リングのスタイル */
         .spinner {
-            border: 8px solid #f3f3f3;
+            border: 0.5rem solid #f3f3f3;
             /* 薄い色 */
-            border-top: 8px solid #3498db;
+            border-top: 0.5rem solid #3498db;
             /* トップ部分の色 */
             border-radius: 50%;
             /* 円形にする */
-            width: 50px;
+            width: 3.125rem;
             /* リングのサイズ */
-            height: 50px;
+            height: 3.125rem;
             animation: spin 1s linear infinite;
             /* アニメーションの設定 */
         }
