@@ -78,13 +78,6 @@
             }
         }
 
-        /* @media (min-width: 768px) {
-            .navhidden {
-                display: none;
-                スマホサイズなどはサイドバー非表示
-            }
-        } */
-
         .update-info {
             white-space: nowrap;
             /* 文字が折り返されないようにする */
