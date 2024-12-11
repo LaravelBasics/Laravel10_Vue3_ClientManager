@@ -99,7 +99,7 @@
     <h1 class="green-bg" id="section3">【プロフィール】</h1>
     <div>
         <div>
-            <h3>自己紹介</h3>
+            <h3><i class="fa-solid fa-user-circle" style="color: #3498db"></i> 自己紹介</h3>
             <p class="gray-bg">私はゲーム（PSO2、ラチェット＆クランク、モンスターハンター、遊戯王）、アニメ、漫画が好きで、<br>
                 テクノロジーに関心を持ちながら、プログラミングに挑戦し続けている成長中のエンジニアです。
                 <br>
@@ -107,14 +107,14 @@
             </p>
         </div>
         <div>
-            <h3>学習やキャリアの動機</h3>
+            <h3><i class="fa-solid fa-lightbulb" style="color: #f1c40f;"></i> 学習やキャリアの動機</h3>
             <p class="gray-bg">PC関係の職につきたいという思いから、プログラミングに興味を持ち、独学や実習を通じてスキルを身につけています。
                 <br>
                 特に、フロントエンド（Vue.js、Reactなど）とバックエンド（PHP、Java）の両方に興味があり、幅広い技術を学ぶことで自分の可能性を広げたいと思っています。
             </p>
         </div>
         <div>
-            <h3>現在学習中の言語や環境</h3>
+            <h3><i class="fa-solid fa-pencil" style="color: #e67e22;"></i> 現在学習中の言語や環境</h3>
             <p class="gray-bg"><strong>プログラミング言語:</strong> PHP, HTML5, CSS3, JavaScript
                 <br>
                 <strong>フレームワーク: </strong>Laravel, Vue.js 3.4, Bootstrap 5.3
@@ -127,7 +127,7 @@
             </p>
         </div>
         <div>
-            <h3>デプロイ経験</h3>
+            <h3><i class="fa-brands fa-github"></i> デプロイ経験</h3>
             <p class="gray-bg">Windows、Linux共に、GitHubにプッシュ、Vercelにデプロイ、VercelDBとの接続にも成功。
                 <br>
                 WindowsはXAMPP, Laravel 10, 11, PHP 8.2, PostgreSQL
@@ -136,14 +136,14 @@
             </p>
         </div>
         <div>
-            <h3>将来の目標</h3>
+            <h3><i class="fa-solid fa-bullseye" style="color: #e74c3c;"></i> 将来の目標</h3>
             <p class="gray-bg">将来の目標はまだ明確に決まっていませんが、フロントエンドとバックエンドの両方に興味を持ち、各技術を磨きながら、プロジェクトに活かしていきたいと考えています。</p>
         </div>
     </div>
     <div>
         <div>
             <h1 class="green-bg" id="section5">【実習履歴】</h1>
-            <h5><strong>本社実習（株式会社リテラル）:</strong> 8/19～9/19の1か月間、10～16時（休憩1時間）</h3>
+            <h5><strong><i class="fa-solid fa-gear" style="color: #2ecc71;"></i> 本社実習（株式会社リテラル）:</strong> 8/19～9/19の1か月間、10～16時（休憩1時間）</h3>
                 <p class="gray-bg">
 
                     過去の案件顧客管理システムの一部を基本設計書、詳細設計書を元に作成（マイグレーション、シーダー、モデルは事前に用意された物を使用）
@@ -157,7 +157,7 @@
                     成果: 4画面大体完成。ログイン機能は無し。実習の評価は優秀でした。<br>
                     CSS（相対位置、絶対位置の違い）、データベース、コードの可読性などは更なる学習が必要と感じました。
                 </p>
-                <h5><strong>外部実習:</strong> 3日間、13～17時（小休憩自由）</h5>
+                <h5><strong><i class="fa-solid fa-cogs" style="color: #2ecc71;"></i> 外部実習:</strong> 3日間、13～17時（小休憩自由）</h5>
                 <p class="gray-bg">
                     課題①バーチャルボックスを使用してローカルにLAMP環境を構築し、Laravel 11をインストール。
                     <br>
@@ -173,7 +173,7 @@
     </h1>
 
     <div>
-        <h4><button type="button" class="btn btn-link" @click="showHelpModal"
+        <h4><i class="fa-solid fa-sitemap" style="color: #9b59b6;"></i> <button type="button" class="btn btn-link" @click="showHelpModal"
                 style="font-size: 1.5rem; position: relative; right: 0.75rem;">
                 FizzBuzz
             </button>
@@ -183,7 +183,7 @@
         <p class="gray-bg">コード完成後（コメントアウトしている箇所）、職員からフィードバックを受けて、条件式の部分をメソッド化しました。</p>
 
         <div>
-            <h4><button type="button" class="btn btn-link" @click="showHelpModal4"
+            <h4><i class="fa-solid fa-layer-group" style="color: #3498db;"></i> <button type="button" class="btn btn-link" @click="showHelpModal4"
                     style="font-size: 1.5rem; position: relative; right: 0.75rem;">
                     青森鹿児島問題（二次元配列）
                 </button>
@@ -200,7 +200,7 @@
         </div>
 
         <div>
-            <h4><button type="button" class="btn btn-link" @click="showHelpModal5"
+            <h4>&#127137; <button type="button" class="btn btn-link" @click="showHelpModal5"
                     style="font-size: 1.5rem; position: relative; right: 0.75rem;">
                     ブラックジャック
                 </button>
@@ -215,7 +215,7 @@
             【稼働中のPHPアプリ】<br>
             <!-- <span class="mie" style="font-size: 1.5rem;">サーバーレス環境で動作するPHPアプリ（Vercel + Laravel + PostgreSQL）</span> -->
         </h1>
-        <h5 class="mie"><strong>サーバーレス環境で動作するPHPアプリ（Vercel + Laravel + PostgreSQL）</strong></h5>
+        <h4><i class="fa-solid fa-sync-alt" style="color: #f1c40f;"></i> <strong>サーバーレス環境で稼働中のPHPアプリ（Vercel + Laravel + PostgreSQL）</strong></h4>
         <div>
             <div>
                 <div>
@@ -223,13 +223,12 @@
                         ※Vercelの無料プランではリソース制限により、特に画像処理で504エラーが発生する場合があります。エラー時は少し時間を置いて再試行してください。
                     </span>
                     <div style="padding: 0.5rem 0;"></div>
-                    <!-- <h3>①メルカリ風フリマアプリ</h3> -->
                     <h3>
-                        <span style="margin-right: 5rem;">①メルカリ風フリマアプリ</span>
-                        <a href="https://laravel6-flea-market.vercel.app/" target="_blank">アプリの画面</a>
+                        <span style="margin-right: 5rem;"><i class="fa-solid fa-shopping-cart" style="color: #2ecc71;"></i> メルカリ風フリマアプリ</span>
+                        <a href="https://laravel6-flea-market.vercel.app/" target="_blank"><i class="fa-solid fa-desktop"></i> アプリの画面</a>
                         <span style="margin-right: 5rem;"></span>
                         <a href="https://github.com/LaravelBasics/Laravel6_FleaMarket/tree/main"
-                            target="_blank">GitHub</a>
+                            target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
                     </h3>
                 </div>
                 <p class="gray-bg">開発環境: Windows, Laravel 6, JavaScript, MySQL（教材の環境: Windows, Laravel 7, Docker,
@@ -268,10 +267,10 @@
             </div>
             <div>
                 <h3>
-                <strong style="margin-right: 5rem;">②SNS風アプリ</strong>
-                    <a href="https://laravel6-sns.vercel.app/" target="_blank">アプリの画面</a>
+                <strong style="margin-right: 5rem;"><i class="fa-solid fa-comment-dots" style="color: #2ecc71;"></i> SNS風アプリ</strong>
+                    <a href="https://laravel6-sns.vercel.app/" target="_blank"><i class="fa-solid fa-desktop"></i> アプリの画面</a>
                     <span style="margin-right: 5rem;"></span>
-                    <a href="https://github.com/LaravelBasics/Laravel6_SNS" target="_blank">GitHub</a>
+                    <a href="https://github.com/LaravelBasics/Laravel6_SNS" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
                 </h3>
                 <p class="gray-bg">開発環境: Windows, Laravel 6, Vue.js 3, MySQL
                     （教材の環境: MacOS, Laravel 6, Docker, Vue.js 2, PostgreSQL）
@@ -310,10 +309,10 @@
             </div>
             <div>
                 <h3>
-                <strong style="margin-right: 5rem;">③本管理アプリ</strong>
-                    <a href="https://laravel10-books.vercel.app/" target="_blank">アプリの画面</a>
+                <strong style="margin-right: 5rem;"><i class="fa-solid fa-book-open" style="color: #2ecc71;"></i> 本管理アプリ</strong>
+                    <a href="https://laravel10-books.vercel.app/" target="_blank"><i class="fa-solid fa-desktop"></i> アプリの画面</a>
                     <span style="margin-right: 5rem;"></span>
-                    <a href="https://github.com/LaravelBasics/Laravel10_Books" target="_blank">GitHub</a>
+                    <a href="https://github.com/LaravelBasics/Laravel10_Books" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
                 </h3>
                 <p class="gray-bg">開発環境: Windows, Laravel 10, React, 認証パッケージBreeze, PostgreSQL
                     <br>
@@ -341,12 +340,12 @@
             </div>
             <div>
                 <h3>
-                <strong style="margin-right: 5rem;">④顧客管理システムを置き換えたアプリ</strong>
+                <strong style="margin-right: 5rem;"><i class="fa-solid fa-users" style="color: #2ecc71;"></i> 顧客管理システムを置き換えたアプリ</strong>
                     <a href="https://laravel10-vue3-client-manager.vercel.app/languages"
-                        target="_blank">アプリの画面</a>
+                        target="_blank"><i class="fa-solid fa-desktop"></i> アプリの画面</a>
                     <span style="margin-right: 5rem;"></span>
                     <a href="https://github.com/LaravelBasics/Laravel10_Vue3_ClientManager/tree/master"
-                        target="_blank">GitHub</a>
+                        target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
                 </h3>
                 </p>
                 <p class="gray-bg">開発環境: Windows, Laravel 10, CDN Vuejs 3.3, Bootstrap 5.3
@@ -378,11 +377,11 @@
             </div>
             <div>
                 <h3>
-                <strong style="margin-right: 5rem;">⑤簡易お問い合わせフォームアプリ</strong>
-                    <a href="https://laravel11-contact-form.vercel.app/" target="_blank">アプリの画面</a>
+                <strong style="margin-right: 5rem;"><i class="fa-solid fa-envelope" style="color: #2ecc71;"></i> 簡易お問い合わせフォームアプリ</strong>
+                    <a href="https://laravel11-contact-form.vercel.app/" target="_blank"><i class="fa-solid fa-desktop"></i> アプリの画面</a>
                     <span style="margin-right: 5rem;"></span>
                     <a href="https://github.com/LaravelBasics/Laravel11_ContactForm/tree/master"
-                        target="_blank">GitHub</a>
+                        target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
                 </h3>
                 <p class="gray-bg">開発環境: バーチャルボックス, LAMP(RockyLinux9.4, apache 2.4, MySQL 8.0, PHP8.2), Laravel 11
                     <br>
@@ -402,12 +401,12 @@
             </div>
             <div>
                 <h3>
-                <strong style="margin-right: 5rem;">⑥Breezeを使ったログイン機能のデプロイに挑戦したアプリ</strong>
+                <strong style="margin-right: 5rem;"><i class="fa-solid fa-cloud-upload-alt" style="color: #2ecc71"></i> Breezeを使ったログイン機能のデプロイに挑戦したアプリ</strong>
                     <a href="https://laravel10-breeze-demo.vercel.app/"
-                        target="_blank">アプリの画面</a>
+                        target="_blank"><i class="fa-solid fa-desktop"></i> アプリの画面</a>
                     <span style="margin-right: 5rem;"></span>
                     <a href="https://github.com/LaravelBasics/Laravel10_Breeze_Demo/tree/aaa"
-                        target="_blank">GitHub</a>
+                        target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
                 </h3>
                 <p class="gray-bg">開発環境: Windows, Laravel 10, 認証パッケージBreeze, PostgreSQL
                     <br>
@@ -458,7 +457,7 @@
                         </p>
                         <a href="https://github.com/LaravelBasics/java/blob/master/src/FizzBuzz7_1/FizzBuzz.java"
                             target="_blank">
-                            <h5>自身で制作したコード</h5>
+                            <h5><i class="fa-brands fa-github"></i>自身で制作したコード</h5>
                         </a>
                     </div>
                 </div>
@@ -562,12 +561,12 @@
 
                         <h5>問題 【4】<a
                                 href="https://github.com/LaravelBasics/java/blob/master/src/%E9%9D%92%E6%A3%AE%E9%B9%BF%E5%85%90%E5%B3%B6%E5%95%8F%E9%A1%8C/Main.java"
-                                target="_blank" style="padding-left: 4.3rem;">自身で制作したコード</a></h5>
+                                target="_blank" style="padding-left: 4.3rem;"><i class="fa-brands fa-github"></i>自身で制作したコード</a></h5>
                         5 * 5の世界の中に存在できる青森の最大の数と、その配置を求めてください
 
                         <h5>研究問題 【1】<a
                                 href="https://github.com/LaravelBasics/java/blob/master/src/%E9%9D%92%E6%A3%AE%E9%B9%BF%E5%85%90%E5%B3%B6%E5%95%8F%E9%A1%8C/kennkyuu.java"
-                                target="_blank" style="padding-left: 2rem;">自身で制作したコード</a></h5>
+                                target="_blank" style="padding-left: 2rem;"><i class="fa-brands fa-github"></i>自身で制作したコード</a></h5>
                         10000 * 10000 の世界を作成し、その中の青森と鹿児島の数を教えてください
                         ただし、１秒以内に数えて終わってください
 
@@ -591,7 +590,7 @@
                     <div class="modal-body">
                         <h5>【自身で考えた仕様】<a
                                 href="https://github.com/LaravelBasics/java/blob/master/src/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AF/Game.java"
-                                target="_blank" style="padding-left: 2rem;">自身で制作したコード</a></h5>
+                                target="_blank" style="padding-left: 2rem;"><i class="fa-brands fa-github"></i>自身で制作したコード</a></h5>
                         <p>５２枚のトランプを使用（ジョーカーはありません）<br>
                             初めにディーラーがカードを2枚ずつ配ります。<br>
                             ゲーム開始時、『ディーラー』の手は２枚のうち1枚だけ開示されます<br>
@@ -630,10 +629,10 @@
             <p>3月19日〜3月22日: ProgateのJavaScript</p>
             <p>3月25日〜3月27日: SQL</p>
             <p>3月29日〜4月1日: ProgateのPython</p>
-            <p class="gray-bg">4月1日〜4月30日: Microsoft Officeを学習</p>
+            <p class="gray-bg">4月1日〜4月30日: <i class="fa-solid fa-file-word" style="color: #2b5797;"></i> <i class="fa-solid fa-file-excel" style="color: #217346;"></i> <i class="fa-solid fa-file-powerpoint" style="color: #D54E00;"></i> Microsoft Officeを学習</p>
             <p>4月25日〜5月17日: 教材PDO</p>
             <p>5月20日〜6月24日: 教材Laravel 6基礎</p>
-            <p>6月25日〜7月4日: 教材Techpit①メルカリ風フリマアプリ制作、Excelアンケートデータ入力(一日目10件、二日目20件)</p>
+            <p>6月25日〜7月4日: 教材Techpit①メルカリ風フリマアプリ制作、<i class="fa-solid fa-file-excel" style="color: #217346;"></i> Excelアンケートデータ入力(一日目10件、二日目20件)</p>
             <p>7月8日〜7月24日: Techpit②SNS風アプリ制作、PC4台キッティング作業</p>
 
             <h6 class="mie">2024年7月</h6>
@@ -642,7 +641,7 @@
             <p>8月6日〜8月7日: JavaScriptによるDOM操作</p>
             <p>8月8日〜8月16日: Vue.js</p>
             <p>8月19日〜9月19日: リテラル本社実習</p>
-            <p>9月24日〜9月27日: 実習で作成したコードを置き換えられるか検証④顧客管理システムのコードを置き換えたアプリ、Excelアンケートデータ入力(10件)</p>
+            <p>9月24日〜9月27日: 実習で作成したコードを置き換えられるか検証④顧客管理システムのコードを置き換えたアプリ、<i class="fa-solid fa-file-excel" style="color: #217346;"></i> Excelアンケートデータ入力(10件)</p>
             <p>9月28日〜9月30日: ProgateでjQuery</p>
             <p>10月1日〜10月7日: 外部実習のために学習（Linux環境でUbuntu、LAMP構築）</p>
             <p>10月8日〜10月10日: 3日間外部実習、Rocky Linux 9 LAMP環境構築、⑤簡易お問い合わせフォームアプリ作成</p>
