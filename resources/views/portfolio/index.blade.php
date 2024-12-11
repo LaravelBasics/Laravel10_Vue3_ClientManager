@@ -345,7 +345,7 @@
                     <a href="https://laravel10-vue3-client-manager.vercel.app/languages"
                         target="_blank">アプリの画面</a>
                     <span style="margin-right: 5rem;"></span>
-                    <a href="https://github.com/LaravelBasics/Laravel10_Vue3_ClientManager"
+                    <a href="https://github.com/LaravelBasics/Laravel10_Vue3_ClientManager/tree/master"
                         target="_blank">GitHub</a>
                 </h3>
                 </p>
