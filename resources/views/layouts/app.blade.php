@@ -40,12 +40,6 @@
             /* アイコンが他の要素より前面に表示されるように調整 */
         }
 
-        /* ハンバーガーアイコンと最終更新日の配置調整 */
-        .position-absolute {
-            top: 0.625rem;
-            /* 上からの距離を調整 */
-        }
-
         /* スクリーン幅が768px未満のときに、positionを解除 */
         @media (max-width: 48rem) {
             .sidebar {
@@ -71,12 +65,6 @@
             .navhidden {
                 display: block;
                 width: 100%;
-            }
-
-            .position-absolute {
-                top: 0.3125rem;
-                /* 小画面用の微調整 */
-                right: 0.3125rem;
             }
         }
 

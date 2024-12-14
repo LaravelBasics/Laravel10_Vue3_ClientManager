@@ -6,7 +6,7 @@
             <small class="form-text text-muted" style="margin-left: 0ch;">アップル梅田</small>
         </div>
         <div class="d-flex ms-auto align-items-center">
-            <span class="me-4">最終更新日: 2024/12/11</span>
+            <span class="me-4">最終更新日: 2024/12/14</span>
             <a href="/" class="btn btn-outline-primary"
                 style="background-color: white; color: #0d6efd; border-color: #0d6efd; margin-top: 0.3rem;">
                 トップページ
